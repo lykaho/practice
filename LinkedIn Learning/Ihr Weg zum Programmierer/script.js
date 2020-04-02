@@ -116,7 +116,7 @@ alert(x);
 //Außerhalb nur mit alert(x) kommt undefined.
 //wenn die Variable außerhalb der function def wird, ist sie global und kann immer abgerufen werden.
 
-var menge = 0
+var menge = 0;
 var e = 1; //Index
 while (e<=10){ //Bedingung
   menge = menge + 100;
