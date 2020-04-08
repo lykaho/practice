@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script erforschen</title>
+        <style>
+            body{color:red; }
+            h1{ font-family:Arial, sans-serif;
+                font-size:32;
+                color:black}
+        </style>
+        
+    </head>
+    <body>
+        <h1>Dies ist meine Überschrift</h1>
+        <p>Das steht dann ein Fließtext. Es tut sich noch nicht viel Aufregendes - aber wenn man auf den 
+            Botton drückt...</p>
+        <button id="color">Farbwechsel</button>
+        <script>
+            document.getElementById("color").onclick = changeColor;
+            var currentColor = "red";
+            function changeColor() {
+                if (currentColor == "red") {
+                    document.body.style.color = "green";
+                    currentColor = "green";
+                }else {
+                    document.body.style.color = "green";
+                    currentColor = "green";
+                }
+                return currentColor;
+            }
+        </script>
+    </body>
+</html>
