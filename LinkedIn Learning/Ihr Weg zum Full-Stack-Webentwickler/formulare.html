@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5</title>
+        <script>
+            function pruefeEmail () {
+                var email = document.forms[0].elements["email"];
+                if(email.value.lenght <=20){
+                    email.setCustomValidity(""); //leere Ausgabe = keine Ausgabe
+                }else {
+                    email.setCustomValidity("Die Email Adresse ist zu lang!");
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <section>
+            <header>
+                <h1>Formulare</h1>
+            </header>
+            <h3>Date</h3>
+            <form onsubmit="pruefeEmail();">
+                text: <input type="text" disabled><br>
+                date: <input type="date" name="date"><br>
+                datetime: <input type="datetime" name="datetime"><br>
+                datetime-local: <input type="datetime-local" name="datetime-local"><br>
+                month: <input type="month" name="month"><br>
+                time: <input type="time" name="time"><br>
+                week: <input type="week" name="week"><br>
+                
+                email: <input type="email" name="email" required pattern="\.at$" onchange="pruefeEmail();"><br>
+                tel: <input type="tel" name="tel" maxlenght="20"><br>
+                url: <input type="url" name="url"><br>
+
+                number: <input type="number" name="number" step="0.1"><br>
+                range: <input type="range" min="1" max="10" name="range"><br>
+
+                progress: <progress name="progress" min="1" max="10" value="4"></progress><br>
+                meter: <meter name="meter" min="1" max="10" value="5"></meter><br>
+
+                color: <input type="color" name="color">
+
+                <input type="submit" name="Abschicken">
+            </form>
+        </section>
+    </body>
+</html>
