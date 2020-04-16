@@ -14,7 +14,12 @@ body {
   font-family: 'Source Sans Pro', Arial, sans-serif; 
 
   /* Schriftgröße explizit festlegen */ 
+
   font-size: 1rem; 
+  
+  min-width: 320px;
+  max-width: 780px;
+  margin: auto;
 }
 
 /* Schriftgrößen für Überschriften */
@@ -100,6 +105,7 @@ h4 { font-size: 1.5rem; }
   text-align: center; 
   padding: 1em; 
   margin: 1em 0; 
+  border-left: 5px solid #0B74B8;
 }
 
 /* Grundlegende Gestaltung der Navigation */ 
