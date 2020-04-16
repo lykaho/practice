@@ -1,0 +1,40 @@
+@media screen{
+    body {
+        /* Variante 1: Einfach nur eine Schriftart ohne Serifen */
+        font-family: sans-serif; 
+      
+        /* Variante 2: Schriftarten wünschen */
+        font-family: Helvetica, Arial, sans-serif; 
+      
+        /* Variante 3: Webfonts - Schriftart mitliefern (wird weiter oben mit @import geladen) */
+        font-family: 'Source Sans Pro', Arial, sans-serif; 
+      
+        /* Schriftgröße explizit festlegen */ 
+        font-size: 1rem; 
+      }
+      
+      /* Schriftgrößen für Überschriften */
+      h1 { font-size: 2.5rem; } 
+      h2 { font-size: 2rem; } 
+      h3 { font-size: 1.75rem; } 
+      h4 { font-size: 1.5rem; } 
+
+
+        /* Abstände Logo und Slogan anpassen */ 
+        .site-logo {
+        margin-bottom: 0; 
+        }
+        .site-slogan {
+        margin: 0; 
+        }
+      
+      /* Schrift im Fußbereich eine Stufe kleiner */
+      .site-footer {
+        background-color: #333; 
+        padding: 0.5em; 
+        margin: 1em 0; 
+        font-size: smaller;
+      }
+
+
+} /* End media */

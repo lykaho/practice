@@ -1,0 +1,66 @@
+@media screen {
+
+    /* Zeilenabstand auf das anderthalbfache der Schriftgröße */
+    .site-content {
+        line-height: 1.5;
+    }
+
+
+    /* Hyperlinks im Inhaltsbereich gestalten */
+    .site-content a:link {
+    color: #0B74B8; 
+    }
+    .site-content a:visited { 
+    color: #36aade; 
+    }
+
+    .site-content a:hover, 
+    .site-content a:focus {
+    color: #F5662E;
+    }
+    .site-content a:active {
+    color: #d90000; 
+    }
+
+
+    /* Gestaltung der Kundenstimmen mit Box-Modell-Eigenschaften */ 
+    .kundenstimme {
+        background-color: #eee;
+        text-align: center;
+        padding: 1em;
+        margin: 0 0 1em 0;
+        border-left: 5px solid #0b74b8;
+    }
+
+
+    /* Grundlegende Gestaltung der Infoboxen */ 
+    .infoboxen {
+        background-color: #eee; 
+        padding: 1em; 
+        margin-bottom: 1em; 
+    }
+    .infobox {
+        text-align: center; 
+        background-color: white; 
+        padding: 1em;
+        margin: 1em; 
+    }
+
+    /* Grundlegende Gestaltung der Navigation */ 
+    a.sie-sind-hier {
+        text-decoration: underline; 
+    }
+    
+    /* Grundlegende Gestaltung Kontaktdaten und Kontaktformular */ 
+    address {
+        font-style: normal; 
+    }
+    label {
+        display: block; 
+    }
+    form div {
+        margin-bottom: 1em; 
+    }
+
+
+} /* end media */
