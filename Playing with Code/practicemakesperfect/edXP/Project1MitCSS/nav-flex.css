@@ -1,0 +1,21 @@
+@media screen {
+
+    /* Basisformatierung */
+.site-nav {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+/* Liste gestalten */
+.site-nav-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav-list a {
+    display: block;
+    text-decoration: none;
+}
+
+} /*end media */

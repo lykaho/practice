@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@media screen {
+    /*general layout*/
+    html {
+        font-family: 'Playfair Display', "Times New Roman", Times, serif;
+        box-sizing: border-box;
+        margin: auto;
+        min-width: 320px;
+        max-width: 630px;
+        font-size: 1rem;
+        background-color: #ffffff;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    /* Vermeidung von collapsing margins*/
+    h1, h2, h3, h4, h5, h6,
+    p, ul, ol, blockquote {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+
+    }
+
+    .zubereitung {
+        margin-bottom: 2rem;
+    }
+
+    /*Navigation*/
+    .nav {
+        border-style: solid;
+        background-color: #333;
+        border-width: 0.1rem;
+        margin: 1em 0;
+        padding: 0.5em;
+    
+    }
+    .nav li {
+        display: inline;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+
+
+    .nav a:link {
+        color: white;
+    }
+    .nav a:visited {
+        color: white;
+    }
+    .nav a:hover,
+    .nav a:focus {
+        color: white;
+    }
+    .nav a:active {
+        color: white;
+    }
+
+
+    /* Rezepblöcke */
+
+
+} /* end media */
