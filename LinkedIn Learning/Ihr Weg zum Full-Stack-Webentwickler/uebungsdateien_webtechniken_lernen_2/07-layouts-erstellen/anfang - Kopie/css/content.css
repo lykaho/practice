@@ -30,14 +30,14 @@ content.css
   /* Grundlegende Gestaltung der Infoboxen aus Teil 1 */ 
   .infoboxen {
     background-color: #eee; 
-    padding: 1em; 
+    padding: 1rem 0; 
     margin-bottom: 1em; 
   }
   .infobox {
     text-align: center; 
     background-color: white; 
-    padding: 1em;
-    margin: 1em; 
+    padding: 1rem;
+    margin: 1rem 0; 
   }
 
 
