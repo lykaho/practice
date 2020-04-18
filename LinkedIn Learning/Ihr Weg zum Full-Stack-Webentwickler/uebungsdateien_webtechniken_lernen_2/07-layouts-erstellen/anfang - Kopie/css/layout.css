@@ -27,6 +27,15 @@ layout.css
     * Inhaltsbereich   
     */ 
 
+  /*Inhalt zentral anordnen */
+
+  .wrapper {
+    min-width: 320px;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
   /* Zeilenabstand auf das anderthalbfache der Schriftgröße */
   .site-content {
       line-height: 1.5;
