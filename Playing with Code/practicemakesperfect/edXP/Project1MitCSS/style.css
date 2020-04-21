@@ -15,7 +15,7 @@
     body {
         margin: 0;
         margin: auto;
-        background-color: #ffffff;
+        background-color: white;
     }
 
     .wrapper {
@@ -119,16 +119,18 @@
 
 
     /* Rezepblöcke */
-
     #One-Pot-Pasta,
-    #Gnocchi,
-    #reispfanne {
+    #Gnocchi {
         background: #eee;
-        padding: 1rem;
+        padding-bottom: 0.25rem;
+        padding-top: 0.75rem;
     }
 
-    #One-Pot
 
+    #reispfanne {
+        padding-bottom: 0.25rem;
+        padding-top: 1rem;
+    }
     /*header, foother*/
 
     .site-footer a {
