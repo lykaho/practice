@@ -2,20 +2,57 @@
 
     /* Basisformatierung */
 .site-nav {
-    padding: 0;
-    margin: 1rem 0;
+    padding: 0rem;
+    margin: 2rem 0;
+
+    box-shadow: 0 2px 6px rgba(51,51,51,0.3);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+    background: #333;
+    color: white;
 }
 
 /* Liste gestalten */
 .site-nav-list {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+
+    background: #333;
+    color: white;
+    
+}
+
+.site-nav-list li {
+    list-style: none;
+    
 }
 
 .site-nav-list a {
     display: block;
     text-decoration: none;
+    text-align: center;
+    min-width: 72px;
+
+    background: #333;
+    color: white;
+
+    padding: 0.5rem
 }
+
+.site-nav-list a:hover,
+.site-nav-list a:focus {
+    background: #666;
+    color: white;
+}
+
+.site-nav-list a:active {
+    background: #0b74b8;
+    color: white;
+}
+
 
 } /*end media */
