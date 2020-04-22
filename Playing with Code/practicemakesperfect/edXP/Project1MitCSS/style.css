@@ -15,7 +15,7 @@
     body {
         margin: 0;
         margin: auto;
-        background-color: white;
+        background-color: floralwhite;
     }
 
     .wrapper {
@@ -85,6 +85,10 @@
         margin: 1rem;
     }
 
+    summary {
+        cursor: pointer;
+    }
+
     /*Navigation*/
     .nav {
         border-style: solid;
@@ -96,7 +100,7 @@
     }
     .nav li {
         display: inline;
-        color: white;
+        color: floralwhite;
         padding: 1rem;
         text-align: center;
     }
@@ -121,16 +125,31 @@
     /* Rezepblöcke */
     #One-Pot-Pasta,
     #Gnocchi {
-        background: #eee;
-        padding-bottom: 0.25rem;
-        padding-top: 0.75rem;
+        background: rgb(238, 238, 238, 0.75);
+        padding-bottom: 2rem;
+        padding-top: 2rem;
     }
-
 
     #reispfanne {
-        padding-bottom: 0.25rem;
-        padding-top: 1rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        background: floralwhite;
     }
+
+    #One-Pot-Pasta .wrapper,
+    #Gnocchi .wrapper {
+        background: floralwhite;  
+        padding: 2rem;
+        padding-bottom: 0.25rem;
+    }
+
+    #reispfanne .wrapper {
+        background: rgb(238, 238, 238, 0.75);
+        padding: 2rem;
+        padding-bottom: 0.25rem;
+    }
+
+
     /*header, foother*/
 
     .site-footer a {
