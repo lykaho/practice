@@ -1,0 +1,76 @@
+/* Tabelle Design 1 - einfach */
+/*
+table, tr, th, td {
+    border-width: thin;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 10px;
+    border-color: gray;
+}
+*/
+
+
+/* Tabelle Design 2 - col + rowspan*/
+/*
+table, tr, th, td {
+    border-width: medium;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    background-color: #767171;
+}
+td {
+    background-color: #d9d9d9;
+}
+*/
+
+
+/* Tabelle Design 3 - Zebra */
+/*
+table, tr, th, td {
+    padding: 20px;
+    border-width: thin;
+    border-style: solid;
+    border-color: white;    
+}
+
+th {
+    background-color: #5b9bd5;
+    border-bottom-width: medium;
+}
+table {
+    width: 100%;
+    overflow: scroll;
+}
+
+tr:nth-child(odd) {
+    background-color: #d2deef;
+}
+tr:nth-child(even) {
+    background-color: #eaeff7;
+}
+*/
+
+/*Tabelle Design 4 - Hover Element */
+table, tr, th, td {
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: gray;
+    border-width: thin;
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+
+body {
+    min-width: 320px;
+    max-width: 780px;
+    margin: auto;
+}
