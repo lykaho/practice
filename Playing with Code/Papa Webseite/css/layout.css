@@ -7,3 +7,13 @@ layout.css
 - Inhaltsbereich in content.css 
 
 ================================ */
+
+/* Bild Papa */
+
+.fotofrank {
+    max-width: 25%;
+}
+
+.willkommen {
+    float: left;
+}
