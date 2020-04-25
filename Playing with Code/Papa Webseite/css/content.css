@@ -6,3 +6,27 @@ content.css
 - Inhalte in main    
 
 ================================ */ 
+
+@media screen {
+
+    /*Intro */
+    .willkommen {
+        float: left;
+        margin-top: 1rem;
+    }
+
+    /* Bild Papa */
+
+    .fotofrank {
+        max-width: 25%;
+        margin-right: 2rem;
+    }
+
+
+
+    /* Details Section - Beschreibung ausklappen */
+    details {
+        cursor: pointer;
+    }
+
+} /* end media */

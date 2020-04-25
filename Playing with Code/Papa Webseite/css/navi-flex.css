@@ -5,3 +5,37 @@ navi-flex.css
 Horizontale Navigation basierend auf display:flex  
 
 ================================ */
+
+@media screen {
+/* Basisgestaltung */
+.site-nav {
+    padding: 0;
+    margin: 1rem 0;
+    color: #333;
+}
+
+/* Liste gestalten */
+.site-nav-list {
+    display: flex;
+    flex-wrap: wrap; 
+
+    padding: 0;
+    margin: 0;
+
+    background-color: #333;
+}
+
+.site-nav-list li {
+    list-style: none;
+    display: inline-block;
+}
+.site-nav-list a {
+    display: block;
+    text-decoration: none;
+    min-width: 72px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+}
+} /*end media */

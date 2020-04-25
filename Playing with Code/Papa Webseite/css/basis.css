@@ -68,6 +68,9 @@ basis.css
         font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
         /* Schriftgröße festlegen */
         font-size: 1rem;
+        max-width: 780px;
+        min-width: 320px;
+        margin: auto;
     }
 
     /* Schriftgrößen für Überschriften */

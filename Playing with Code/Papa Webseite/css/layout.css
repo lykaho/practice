@@ -8,12 +8,32 @@ layout.css
 
 ================================ */
 
-/* Bild Papa */
+/*Gestaltung der Überschriften */
 
-.fotofrank {
-    max-width: 25%;
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
 }
 
-.willkommen {
-    float: left;
+/*Gestaltung der Links */
+a:link {
+    color: #0b74b8;
+}
+a:visited {
+    color:#36aade;
+}
+a:hover,
+a:focus {
+    color: #f5662e;
+}
+a:active {
+    color: #d90000;
+}
+
+/* Abstände */
+
+article {
+    margin: 1rem;
+}
+section {
+    margin: 1rem;
 }
