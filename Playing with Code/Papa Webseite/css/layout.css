@@ -7,6 +7,7 @@ layout.css
 - Inhaltsbereich in content.css 
 
 ================================ */
+@media screen {
 
 /*Gestaltung der Überschriften */
 
@@ -14,19 +15,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-/*Gestaltung der Links */
-a:link {
-    color: #0b74b8;
-}
-a:visited {
-    color:#36aade;
-}
-a:hover,
-a:focus {
-    color: #f5662e;
-}
-a:active {
-    color: #d90000;
+.wrapper  {
+    max-width: 780px;
+    min-width: 320px;
+    margin: auto;
 }
 
 /* Abstände */
@@ -37,3 +29,5 @@ article {
 section {
     margin: 1rem;
 }
+
+} /*end media */

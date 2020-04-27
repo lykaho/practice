@@ -7,35 +7,50 @@ Horizontale Navigation basierend auf display:flex
 ================================ */
 
 @media screen {
-/* Basisgestaltung */
-.site-nav {
-    padding: 0;
-    margin: 1rem 0;
-    color: #333;
-}
 
-/* Liste gestalten */
-.site-nav-list {
-    display: flex;
-    flex-wrap: wrap; 
+    /* Basisgestaltung */
+    .site-nav {
+        padding: 0;
+        margin: 1rem 0;
+        background-color: #333;
+        Box-shadow: 0 2px 6px rgba(51, 51, 51, 0.3);
+    }
 
-    padding: 0;
-    margin: 0;
+    /* Liste gestalten */
+    .site-nav-list {
+        display: flex;
+        flex-wrap: wrap; 
 
-    background-color: #333;
-}
+        padding: 0;
+        margin: 0;
+    }
 
-.site-nav-list li {
-    list-style: none;
-    display: inline-block;
-}
-.site-nav-list a {
-    display: block;
-    text-decoration: none;
-    min-width: 72px;
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 0.5rem;
-}
+    .site-nav-list li {
+        list-style: none;
+        display: inline-block;
+    }
+    .site-nav-list a {
+        display: block;
+        text-decoration: none;
+
+        min-width: 72px;
+
+        background-color: #333;
+        color: white;
+
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .site-nav-list a:hover,
+    .site-nav-list a:focus {
+        background-color: #666;
+    }
+
+    a.u-r-here{
+        background-color: #666;
+        color: white;
+    }
+
+
 } /*end media */
