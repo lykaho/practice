@@ -1,0 +1,29 @@
+body{ margin:0px; }
+        
+        .fc > * {
+            margin:10px;
+            padding:20px; 
+            background-color:#d3d3d3;
+            border-radius: 10px;
+            flex: 1;
+        }
+        
+        /* initialize flexbox container and flexbox items */
+        .fc { 
+            display:flex;
+            flex-flow: column wrap;
+            height: 100vh;
+            width: 80vw;
+        }
+        
+        .fc header,
+        .fc footer {
+            margin:0px;
+            flex: 0 1 100vh;
+            width: 7vw;
+            height: 100vh;
+        }
+        
+        /* ensure flex-container is always at least as tall as the viewport. 
+           Keeps footer from coming up*/
+        .fc { min-height: 100vh; } 

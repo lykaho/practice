@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.fc > * {
+    /*design*/
+    background-color: lightgray;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    /*flex-box*/
+    flex:1;
+}
+
+.fc {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* give header & footer each an independent row */
+
+.fc header,
+.fc footer {
+    flex: 0 1 100vw;
+}
+
+/* to get the footer to the bottom of the page */
+.fc {
+    min-height: 100vh;
+}
