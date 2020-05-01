@@ -35,11 +35,13 @@ content.css
 
     
     .fotofrank {
-        max-width: 25%;
+        max-width: 15rem;
+        flex: 1;
+        display: inline-flex;
     }
 
     .willkommen-content {
-        max-width: 60%;
+        flex: 3;
     }
 
 
@@ -66,7 +68,6 @@ content.css
         display: inline-flex;
         flex-wrap: wrap;
         width: 30%;
-       /* flex-basis: auto;*/
     }
 
     .bild-buecher,
