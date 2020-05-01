@@ -28,9 +28,18 @@ content.css
     }
     /*Intro */
 
+    .willkommen {
+        display: flex;
+        flex-flow: row wrap;
+    }
 
+    
     .fotofrank {
         max-width: 25%;
+    }
+
+    .willkommen-content {
+        max-width: 60%;
     }
 
 
@@ -46,6 +55,8 @@ content.css
     .buecher {
         padding: 0;
         margin: 1rem 0;
+        display: flex;
+        flex-flow: row wrap;
     }
     .bild-buecher {
         margin-bottom: 0.5rem;
