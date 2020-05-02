@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("nav-flex.css");
+@media screen {
+    /*general layout*/
+    html {
+        font-family: 'Playfair Display', "Times New Roman", Times, serif;
+        box-sizing: border-box;
+        font-size: 1rem;
+        overflow-y: scroll;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        margin: 0;
+        margin: auto;
+        background-color: floralwhite;
+        min-width: 200px;
+        max-width: 630px;
+    }
+/*
+    .wrapper {
+        min-width: 200px;
+        max-width: 630px;
+        padding: 0;
+        margin: 0 auto;
+    }
+*/
+    header, nav, main, footer, 
+    section, article, aside, 
+    figcaption, figure {
+      display: block; 
+    }   
+
+    /* Vermeidung von collapsing margins*/
+    h1, h2, h3, h4, h5, h6,
+    p, ul, ol, blockquote {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    main {
+        line-height: 1.5;
+    }
+
+
+    h1 {
+        font-size: 2.5em;
+        margin-top: 2rem;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+        max-width: 100%;
+
+    }
+
+    .zutaten li {
+        list-style: square;
+    }
+
+    .zubereitung {
+        margin: auto;
+        margin-bottom: 2rem;      
+    }
+
+    details {
+        margin-top: 0.25rem;
+    }
+
+    details li {
+        margin: 0.5rem auto;
+    }
+
+    details ul,
+    details ol {
+        margin: 1rem;
+    }
+
+    summary {
+        cursor: pointer;
+    }
+
+    /*Navigation*/
+    .nav {
+        border-style: solid;
+        background-color: #333;
+        border-width: 0.1rem;
+        margin: 1em 0;
+        padding: 0.5em;
+    
+    }
+    .nav li {
+        display: inline;
+        color: floralwhite;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+
+
+    .nav a:link {
+        color: white;
+    }
+    .nav a:visited {
+        color: white;
+    }
+    .nav a:hover,
+    .nav a:focus {
+        color: white;
+    }
+    .nav a:active {
+        color: white;
+    }
+
+
+    /* Rezepblöcke */
+    .fc {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .fc > * {
+        flex:1;
+        max-width: 45%;
+        margin: 1rem;
+        max-height: 100px;
+        max-width: 100px;
+    }
+
+
+    /*header, foother*/
+
+    .site-footer a {
+        background: #333;
+        color: white;
+        text-decoration: none;
+    }
+
+    .site-footer {
+        background: #333;
+        padding: 0.5rem;
+        margin-bottom: 0;
+        font-size: smaller;
+    }
+
+
+} /* end media */
