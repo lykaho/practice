@@ -1,0 +1,19 @@
+* {box-sizing: border-box;}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.grid div {
+    border: 1px solid rgb (0,95,107);
+    border-radius: 3px;
+    background-color: rgba(0,95,107,0.8);
+    padding: 0.2rem;
+    color: #fff;
+    font-size: 120%;
+}
+.grid div:nth-child(odd) {background-color: dodgerblue;}#
+
