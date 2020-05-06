@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<style>
+* {
+    box-sizing: border-box;
+  }
+body {
+  font: 150% sans-serif;
+  background: #ECF0F1;
+}
+.raster div {
+  background: #E74C3C;
+  border: 1px #2C3E50 solid;
+  border-radius: 0.2em;
+  text-align: center;  
+  font-size: 2em;
+}
+.raster {
+  width: 400px;
+  height: 400px;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 20px;
+  justify-content: start;
+  writing-mode: vertical-lr;
+}
+ 
+</style>
+<title>Gridlayout</title>
+</head> 
+<body>
+  <div class="raster">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <div class="d">D</div>
+	<div class="e">E</div>
+  </div> 
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Grid mit Fallback</title>
+  <style>
+    html {
+      font: 120% sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    header, footer {
+      background: #87cad2;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    article {
+      flex: 1;
+    }
+
+
+  </style>
+</head>
+
+<body>
+<header><h2>Header</h2></header>
+<article><h2>Mittelteil</h2></article>
+<footer><h2>Footer</h2></footer>
+</body>
+</html>

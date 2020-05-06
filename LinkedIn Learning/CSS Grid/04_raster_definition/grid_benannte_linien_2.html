@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 150% sans-serif;
+      background: #ECF0F1;
+    }
+
+    .raster > * {
+      background: #E74C3C;
+      border: 1px #2C3E50 solid;
+      border-radius: 0.2em;
+      padding: 0.5em;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    .main {
+      min-height: 300px;
+    }
+
+    .raster {
+      display: grid;
+      grid-template-columns: [main-start] 2fr [main-end aside-start] 1fr [aside-end];
+      grid-template-rows: [header-start] minmax(150px, auto) [header-end content-start] minmax(150px, auto) [content-end];
+      grid-gap: 20px;
+    }
+
+    header {
+      grid-row: header;
+      grid-column: main-start / aside-end;
+    }
+
+    main {
+      grid-row: content;
+      grid-column: main;
+    }
+
+    aside {
+      grid-row: content;
+      grid-column: aside;
+    }
+  </style>
+  <title>Gridlayout</title>
+</head>
+
+<body>
+<h1>Basis-Layout</h1>
+<div class="raster">
+  <header class="header">header</header>
+  <main class="main">main</main>
+  <aside class="aside">aside</aside>
+</div>
+
+
+</body>
+</html>

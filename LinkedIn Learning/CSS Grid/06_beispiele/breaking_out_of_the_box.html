@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <title>Gridlayout</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .raster {
+      display: grid;
+      grid-gap: 10px;
+      grid-auto-rows: minmax(200px, 1fr);
+      grid-template-columns: minmax(1em, 1fr) minmax(min-content, 40em) minmax(1em, 1fr);
+    }
+
+    .raster > div {
+      grid-column: 2;
+    }
+
+    .raster > .vollebreite {
+      grid-column: 1 / -1;
+    }
+
+    .raster > div {
+      background-color: #3498DB;
+      font-size: 2rem;
+      padding: 10px;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .raster .vollebreite {
+      background: #2C3E50;
+      color: #ECF0F1;
+    }
+
+  </style>
+</head>
+<body>
+<div class="raster">
+  <div class="einleitung">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet metus
+    lao porttitor in metus sed, iaculis dignissim mauris.
+  </div>
+  <div class="vollebreite">Dieser Bereich erstreckt sich über die gesamte Breite, d.h. er geht richtig weit und immer
+    weiter bis zum Rand des Browserfensters.
+  </div>
+  <div class="schluss">Praesent scelerisque tellus et ex mollis, vel venenatis quam auctor. Pellentesque nibh.</div>
+</div>
+</body>
+</html>

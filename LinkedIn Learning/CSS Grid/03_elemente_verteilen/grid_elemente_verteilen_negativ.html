@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 150% sans-serif;
+      background: #ECF0F1;
+    }
+
+    .raster div {
+      background: #E74C3C;
+      border: 1px #2C3E50 solid;
+      border-radius: 0.2em;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    .raster {
+      display: grid;
+      max-width: 600px;
+      min-height: 400px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .a {
+      grid-column: 1 / -1;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      z-index: 1;
+    }
+
+    .raster .a {
+      background: lightgreen;
+    }
+
+    .raster .b {
+      background: lightblue;
+    }
+
+    .b {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row: 1 / -1;
+
+    }
+
+    .c {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .d {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
+
+
+  </style>
+  <title>Gridlayout</title>
+</head>
+<body>
+<div class="raster">
+  <div class="a">A</div>
+  <div class="b">B</div>
+  <div class="c">C</div>
+  <div class="d">D</div>
+</div>
+</body>
+</html>

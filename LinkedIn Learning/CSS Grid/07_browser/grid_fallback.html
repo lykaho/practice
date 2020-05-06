@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 150% sans-serif;
+      background: #ECF0F1;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      background: #ddd;
+      max-width: 600px;
+    }
+
+    .text {
+      align-self: center;
+    }
+
+    .bild {
+      float: left;
+    }
+
+    .container::after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+
+
+  </style>
+  <title>Gridlayout</title>
+</head>
+<body>
+<div class="container">
+  <img src="http://placehold.it/300x200" alt="Bild" class="bild">
+  <div class="text">Text, der auch etwas länger gehen kann</div>
+</div>
+
+</body>
+</html>

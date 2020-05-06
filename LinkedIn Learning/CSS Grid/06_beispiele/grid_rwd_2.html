@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid</title>
+  <style>
+    body > * {
+      margin: 4px;
+      padding: 5px;
+      border-radius: 7px;
+    }
+
+    body {
+      font: 120% sans-serif;
+      max-width: 960px;
+      margin: auto;
+      background: #8fcb8f;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+
+    }
+
+    article {
+      background: #FFFFCB;
+      grid-column: span 2;
+    }
+
+    @media all and (max-width: 50em) {
+      article {
+        grid-column: span 4;
+      }
+    }
+
+    @media all and (max-width: 30em) {
+      article {
+        grid-column: span 6;
+      }
+    }
+  </style>
+</head>
+<body>
+<article><h2>article</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+<article><h2>article</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+<article><h2>article</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+<article><h2>article</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+<article><h2>article</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+<article><h2>article</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+<article><h2>article</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+<article><h2>article</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+<article><h2>article</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+</body>
+</html>

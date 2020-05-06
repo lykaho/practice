@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gridlayout</title>
+  <!-- Original des Rasters bei Jen Simmons http://labs.jensimmons.com/examples/image-gallery-grid-1.html -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-auto-rows: 200px;
+      grid-auto-flow: dense;
+      grid-gap: 1em;
+      margin: 1em;
+    }
+
+    li.highlight-wide {
+      grid-column: span 2;
+    }
+
+    li.highlight-tall {
+      grid-row: span 2;
+    }
+
+    li.highlight-box {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-box"><img src="http://placehold.it/400x400"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-wide"><img src="http://placehold.it/400x200"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-tall"><img src="http://placehold.it/200x400"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-tall"><img src="http://placehold.it/200x400"></li>
+  <li class="highlight-wide"><img src="http://placehold.it/400x200"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-tall"><img src="http://placehold.it/200x400"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-box"><img src="http://placehold.it/400x400"></li>
+  <li class="highlight-tall"><img src="http://placehold.it/200x400"></li>
+  <li class="highlight-tall"><img src="http://placehold.it/200x400"></li>
+  <li class="highlight-box"><img src="http://placehold.it/400x400"></li>
+  <li class="highlight-wide"><img src="http://placehold.it/400x200"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-tall"><img src="http://placehold.it/200x400"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-wide"><img src="http://placehold.it/400x200"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-tall"><img src="http://placehold.it/200x400"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-wide"><img src="http://placehold.it/400x200"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-tall"><img src="http://placehold.it/200x400"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-wide"><img src="http://placehold.it/400x200"></li>
+  <li class="highlight-wide"><img src="http://placehold.it/400x200"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-tall"><img src="http://placehold.it/200x400"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-wide"><img src="http://placehold.it/400x200"></li>
+  <li class="highlight-wide"><img src="http://placehold.it/400x200"></li>
+  <li><img src="http://placehold.it/200x200"></li>
+  <li class="highlight-tall"><img src="http://placehold.it/200x400"></li>
+</ul>
+
+</body>
+</html>

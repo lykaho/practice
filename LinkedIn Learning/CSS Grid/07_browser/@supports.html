@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+body {
+  font: 150% sans-serif;
+  background: #ECF0F1;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #111;
+  max-width: 600px;
+}
+.eins {
+  background: orange;
+}
+.zwei {
+  background: yellow;
+}
+.eins, .zwei {
+  float: left;
+  width: 50%;
+}
+@supports (display: grid) {
+  .eins, .zwei {
+    width: auto;
+  }
+}
+
+  </style>
+  <title>Gridlayout</title>
+</head> 
+<body>
+<div class="container">
+<div class="eins">Erstes Element</div>
+<div class="zwei">Zweites Element</div>
+</div>
+
+</body>
+</html>
