@@ -4,48 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * {
-      box-sizing: border-box;
-    }
+      body {
+        font-family: sans-serif;
+      }
 
-    body {
-      font: 150% sans-serif;
-      background: #ECF0F1;
-    }
-
-    .raster div {
+      .raster > * {
       background: #E74C3C;
       border: 1px #2C3E50 solid;
       border-radius: 0.2em;
+      padding: 20px;
       text-align: center;
-      font-size: 3em;
-    }
+      font-size: 2em;
+      }
 
-    .raster {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-template-rows: 1fr 1fr;
-      max-width: 600px;
-      min-height: 400px;
-      grid-gap: 20px;
-    }
-
-    .a {order: 1;}
-
-    .f {order: -1;}
-
+      .raster {
+        display: grid;
+        grid-gap: 20px;
+        grid-auto-flow: column;
+      }
 
   </style>
   <title>Gridlayout</title>
 </head>
 <body>
-<div class="raster">
-  <div class="a">A</div>
-  <div class="b">B</div>
-  <div class="c">C</div>
-  <div class="d">D</div>
-  <div class="e">E</div>
-  <div class="f">F</div>
-</div>
+  <div class="raster">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <div class="d">D</div>
+    <div class="e">E</div>
+  </div>
 </body>
 </html>
