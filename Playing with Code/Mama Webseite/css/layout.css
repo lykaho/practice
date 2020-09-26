@@ -1,0 +1,25 @@
+/* ================================
+
+layout.css 
+
+- Gestaltung der Layoutbereiche 
+- Hauptnavigation in eigenem Stylesheet 
+- Inhaltsbereich in content.css 
+
+================================ */
+
+@media screen {
+    /*Gestaltung der Überschriften */
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+
+    /*Abstände */
+    article {
+        margin: 1rem;
+    }
+    section {
+        margin: 2rem;
+    }
+
+} /* end media */
