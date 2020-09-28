@@ -9,7 +9,9 @@
     beim Fit werden oder bleiben unterstützt.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="keywords" content="Physioteam Höltge, Physiotherapie, Krankengymnastik, Physiotherapie Zeven, Krankengymnastik Zeven">
-    <link rel="stylesheet" type="text/css" href="css/style.css"    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    
 </head>
 <body>
     <header>
@@ -28,8 +30,45 @@
        </ul> 
     </nav>
     <main>
-        <!-- Platzhalter für eine Diashow-->
-        <section class="diashow"></section>
+        <!-- Slidehow-->
+        <section class="Slidehow-container">
+            <article class="bild_slideshow slide">
+                <img src="Bilder/slideshow1.jpg">
+            </article>
+            <article class="bild_slideshow slide">
+                <img src="Bilder/slideshow2.jpg">
+            </article>
+            <article class="bild_slideshow slide">
+                <img src="Bilder/slideshow3.jpg">
+            </article>
+            <article class="bild_slideshow slide">
+                <img src="Bilder/slideshow4.jpg">
+            </article>
+            <article class="bild_slideshow slide">
+                <img src="Bilder/slideshow5.jpg">
+            </article>
+            <article class="bild_slideshow slide">
+                <img src="Bilder/slideshow6.jpg">
+            </article>
+            
+        <!-- next & previous bottons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        
+        </section>
+        <section>
+            <!-- little dots at the bottom-->
+            <article class="dot_section">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </article>
+        </section>
+        
         
         <section class="beginn">
             <h1>Willkommen bei den Bewegungsprofis!</h1>
@@ -127,5 +166,51 @@
             </article>
         </section>
     </footer>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("bild_slideshow");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        } 
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("bild_slideshow");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 7000); // Change image every 2 seconds
+        } 
+    </script>
 </body>
 </html>
