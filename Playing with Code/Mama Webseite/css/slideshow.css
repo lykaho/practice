@@ -11,12 +11,15 @@ Gestaltung der Diashow, oben auf der Webseite
     .Slidehow-container {
         position: relative;
         margin: auto;
+        z-index: 0;
     }
 
     /* Slideshow Bilder */
 
      .bild_slideshow img{
-        width: 100%
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
     }
 
     /* Hide the pictures by default */
