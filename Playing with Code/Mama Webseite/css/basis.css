@@ -69,8 +69,7 @@ basis.css
         font-size: 1rem;
         background-color: white;
 
-        max-width: 780px;
-        min-width: 320px;
+        min-width: 600px;
         margin: auto;
     }
 

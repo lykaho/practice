@@ -21,7 +21,8 @@ Gestaltung der Diashow, oben auf der Webseite
 
     /* Hide the pictures by default */
     .bild_slideshow {
-        display: none
+        display: none;
+        width: 100%;
     }
 
     /* Next & Previous bottons */

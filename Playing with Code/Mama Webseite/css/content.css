@@ -9,6 +9,23 @@ content.css
 
 @media screen {
 
+    /* Position Logo */
+    img.logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+
+
+    /* Facebook Icon vieeeeeel kleiner!!!!!!!!!!!!!!!*/
+    img.fb_token {
+        width: 1rem;
+    }
+
 
 
 } /* end media */

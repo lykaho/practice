@@ -22,4 +22,11 @@ layout.css
         margin: 2rem;
     }
 
+    /* Wrapper to keep the full width of the Website but move the elements more towards the centre */
+    .wrapper {
+        width: 75%;
+        padding: 0 1rem; 
+        margin: 0 auto; 
+    }
+
 } /* end media */
