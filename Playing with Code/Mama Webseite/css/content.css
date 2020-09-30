@@ -17,12 +17,143 @@ content.css
         margin: 0 auto 1rem;
     }
 
+    /* Einführung (Willkommen) */
+    h1 {
+        color: #2590cf;
+        font-weight: 400;
+    }
+
+    .text_section, .text_beginn {
+        color: #636262;
+    }
+
+    .text_beginn {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+/****************************
+    Bereiche der Webseite
+
+*****************************/
     
+    /* Grid Boxen um die Bereiche der Webseite zu Definieren */
+    .bereiche_webseite {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+
+    }
+     
+    .teilueberschrift {
+    grid-area: header;
+    }
+
+    .Heilpraktiker_section, .Techniken_section, .Wellness_section, .Praevention_section {
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr 0.75fr 0.12fr;
+            grid-template-areas: "header"
+                                "bild"
+                                "text"
+                                "link";
+        }
+        
+    /*Inhaltsgestaltung*/
+    .teilueberschrift {
+        background-color: #ff6600;
+        color: white;
+
+        min-height: 5rem;
+
+        margin-bottom: 1rem;
+        padding-top: 0.5rem;
+
+        grid-area: header;
+    }
+    h3 {
+        font-weight: normal;      
+        
+    }
+
+    /* Linkgestaltung */
+
+    a.erfahre_mehr {
+        text-decoration: none;
+        color: #ff660f;
+    }
+
+    a.erfahre_mehr:hover, a.erfahre_mehr:active, a.erfahre_mehr:focus {
+        color:  #2590cf;
+    }
+
+
+
+/***********************
+    Footer
+************************/
+
+    /* Basis Footer */
+    footer {
+        background-color: #dbdbda;
+
+        display: grid;
+        grid-template-columns: 13% 75% 12%;
+        grid-template-rows: auto auto;
+    }
+
+
+
+    /*Grid Footer */
+    .footer_container {
+        grid-column: 2/3;
+        
+        display: inline-grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas: "kontakt Zeiten Infos" "text_kontakt text_zeiten text_info";
+        
+        padding-top: 3rem;
+    }
+
+    h4 {
+        padding-left: 1rem;
+    }
+
+    .header_footer_1 {
+        grid-area: kontakt;
+    }
+    .header_footer_2 {
+        grid-area: Zeiten;
+    }
+    .header_footer_3 {
+        grid-area: Infos;
+    }
+    .text_footer_1 {
+        grid-area: text_kontakt;
+    }
+    .text_footer_2 {
+        grid-area: text_zeiten;
+    }
+    .text_footer_3 {
+        grid-area: text_info;
+    }
+
+
+    /* Footer Bereich Infos: Links & Abstände */
+    .text_footer_3 > a, .text_footer_1 > a {
+        text-decoration: none;
+        color: #2590cf;
+    }
+
 
 
     /* Facebook Icon vieeeeeel kleiner!!!!!!!!!!!!!!!*/
     img.fb_token {
         width: 1rem;
+    }
+
+    text_footer_1 > p {
+        color: black;
     }
 
 
