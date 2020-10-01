@@ -37,52 +37,63 @@ content.css
 *****************************/
     
     /* Grid Boxen um die Bereiche der Webseite zu Definieren */
-    .bereiche_webseite {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-
-
-    }
-     
-    .teilueberschrift {
-    grid-area: header;
-    }
-
-    .Heilpraktiker_section, .Techniken_section, .Wellness_section, .Praevention_section {
-            display:grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 1fr 0.75fr 0.12fr;
-            grid-template-areas: "header"
-                                "bild"
-                                "text"
-                                "link";
+        .bereiche_webseite {
+            display: grid;
+            grid-template-columns: 12.5% 75% 12.5%;
+            grid-template-rows: auto auto;
         }
-        
+        .bereiche_container {
+            grid-column: 2/3;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 0.45fr 1fr 0.7fr 0.2fr;
+            grid-template-areas: "header_1 header_2 header_3 header_4"
+                                 "bild_1 bild_2 bild_3 bild_4"
+                                 "text_1 text_2 text_3 text_4"
+                                 "mehr_1 mehr_2 mehr_3 mehr_4";
+        }
+        .teilueberschrift_1 {grid-area: header_1;}
+        .teilueberschrift_2 {grid-area: header_2;}
+        .teilueberschrift_3 {grid-area: header_3;}
+        .teilueberschrift_4 {grid-area: header_4;}
+        .img_section_1 {grid-area: bild_1;}
+        .img_section_2 {grid-area: bild_2;}
+        .img_section_3 {grid-area: bild_3;}
+        .img_section_4 {grid-area: bild_4;}
+        .text_section_1 {grid-area: text_1;}
+        .text_section_2 {grid-area: text_2;}
+        .text_section_3 {grid-area: text_3;}
+        .text_section_4 {grid-area: text_4;}
+        .erfahre_mehr_1 {grid-area: mehr_1;}
+        .erfahre_mehr_2 {grid-area: mehr_2;}
+        .erfahre_mehr_3 {grid-area: mehr_3;}
+        .erfahre_mehr_4 {grid-area: mehr_4;}
+
     /*Inhaltsgestaltung*/
-    .teilueberschrift {
+    .teilueberschrift_1, .teilueberschrift_2, .teilueberschrift_3, .teilueberschrift_4 {
         background-color: #ff6600;
         color: white;
-
-        min-height: 5rem;
-
-        margin-bottom: 1rem;
-        padding-top: 0.5rem;
-
-        grid-area: header;
-    }
+        }
     h3 {
         font-weight: normal;      
         
     }
 
+    .bereiche_container {
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+    }
+
     /* Linkgestaltung */
 
-    a.erfahre_mehr {
+    a.erfahre_mehr_1, a.erfahre_mehr_2, a.erfahre_mehr_3, a.erfahre_mehr_4 {
         text-decoration: none;
         color: #ff660f;
     }
 
-    a.erfahre_mehr:hover, a.erfahre_mehr:active, a.erfahre_mehr:focus {
+    a.erfahre_mehr_1:hover, a.erfahre_mehr_2:hover, a.erfahre_mehr_3:hover, a.erfahre_mehr_4:hover, 
+    a.erfahre_mehr_1:active, a.erfahre_mehr_2:active, a.erfahre_mehr_3:active, a.erfahre_mehr_4:active, 
+    a.erfahre_mehr_1:focus, a.erfahre_mehr_2:focus, a.erfahre_mehr_3:focus, a.erfahre_mehr_4:focus {
         color:  #2590cf;
     }
 
