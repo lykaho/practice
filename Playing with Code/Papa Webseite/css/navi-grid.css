@@ -1,0 +1,60 @@
+/* ================================
+
+navi-grid.css 
+
+- Layout of the Navigation bar   
+
+================================ */ 
+
+@media screen {
+
+    .nav_container {
+        background-color: saddlebrown;
+        position: sticky;
+        position: -webkit-sticky;
+        top:0;        
+    }
+    .site-nav-list {
+        display: grid;
+        grid-template-columns: 20% repeat(4, 1fr) 1.5fr repeat(3,1fr) 20%;
+        grid-template-rows: 2rem;
+        grid-template-areas: ". start romane kinder sach pr journalism storytelling kontakt .";      
+
+        justify-content: center;
+        
+    }
+    .start {grid-area: start;}
+    .roman {grid-area: romane;}
+    .kinder {grid-area: kinder;}
+    .sach {grid-area: sach;}
+    .pr {grid-area: pr;}
+    .journalism {grid-area: journalism;}
+    .story {grid-area: storytelling;}
+    .kontakt {grid-area: kontakt;}
+
+
+    /*Layout Nav*/
+    li > a {
+        text-decoration: none;
+        color: white;
+
+    }
+    li {
+        list-style-type: none;
+        justify-self: center;  
+        align-self: center;      
+    }
+
+    /* Gestaltung der Links*/
+    li:hover, li > a:active, li > a:focus {
+        background-color: #333;
+    }
+
+    li {
+        padding: 0.35rem;
+    }
+
+
+
+
+} /*end media*/
