@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="portfolio1.css">
+        <script src="https://kit.fontawesome.com/91143441c5.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <nav id="navbar">
+            <ul id="nav-ul">
+                <li><a href="#welcome-section">About Me</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <header id="welcome-section">
+            <div id="text-header">
+                <h6>Hey</h6>
+                <h1>I'm Lynn</h1>
+                <h6>Google Ads Specialist <br>& Developer</h6>
+            </div>
+                <img id="welcome-img" src="bildheader1.jpg" alt="A picture of Lynn Hoeltge">
+        </header>
+        <main>
+            <section id="projects">
+                <header id="header_projects">
+                    <h2>These are some of my Projects</h2>
+                </header>
+                <article class="project-tyle">
+                    <a class="link_project" href="https://codepen.io/lykaho/full/abZdJmd">
+                        <img class="img_project" src="pyhsioteam.png" alt="A picture of the Physioteam Project">
+                    </a>
+                </article>
+                <article class="project-tyle">
+                    <a class="link_project" href="https://codepen.io/lykaho/full/jOrWBVJ">
+                        <img class="img_project" src="franklittek.png" alt="A Picture of Frank Litteks New Website">
+                    </a>
+                </article>
+                <article class="project-tyle">
+                        <a class="link_project" href="https://codepen.io/lykaho/full/rNLVymj">
+                            <img class="img_project" src="technicaldoc.png" alt="A Picture of the Technical Documentation Project">
+                        </a>
+                </article>
+                <article class="project-tyle">
+                    <a class="link_project" href="https://codepen.io/lykaho/full/oNLvBMM">
+                        <img class="img_project" src="productpage.png" alt="A Picture of the Product Page Project">
+                    </a>
+                </article>
+                <article class="project-tyle">
+                    <a class="link_project" href="https://codepen.io/lykaho/full/MWaEMKJ">
+                        <img class="img_project" src="recipe.png" alt="A Picture of the Recipe Page Project">
+                    </a>
+                </article>
+                <article class="project-tyle">
+                    <a class="link_project" href="https://codepen.io/lykaho/full/GRZVGgv">
+                        <img class="img_project" src="goodvibes.png" alt="A Picture of the Good Vibes Form">
+                    </a>
+                </article>                
+            </section>
+            <section id="contact_me_container">
+                <h3 id="title_contact">Let's Work Together...</h3>
+                <article id="profile_link">
+                    <div id="git" class="anim">
+                        <i class="fab fa-github"></i><a class="link_profile" href="https://github.com/lykaho/">GitHub</a>
+                    </div>
+                    <div id="linkedin" class="anim">
+                       <i class="fab fa-linkedin"></i><a class="link_profile" href="https://www.linkedin.com/in/lynn-hoeltge/">LinkedIn</a>
+                    </div>
+                    <div id="mail" class="anim">
+                        <i class="fas fa-at"></i><a class="link_profile" href="mailto:example@gmail.com" target="_blank">Send me an Email</a>
+                    </div>
+                    <div id="call" class="anim">
+                        <i class="fas fa-mobile-alt"></i><a class="link_profile" href="tel:123-456-7890">Call me</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p id="footer-text">**This is just a Training Portfolio</p>
+        </footer>
+        <script>
+            // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+        </script>
+    </body>
+</html>

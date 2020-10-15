@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Good Vibes Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet" type="text/css">
+        <style>
+            html {
+                background-color: #a9d7e9;
+            }    
+            form {
+                min-width: 320px;
+                max-width: 50%;
+                background-color: #f3f3f3;
+
+                margin: auto;
+                padding: 2rem;
+
+                border-radius: 3%;
+            }
+            h1 {
+                text-align: center;
+                font-size: 2.5rem;
+            }
+            label, input, p, textarea, option {
+                margin: 0.3rem;
+                padding: 0.5rem;
+            }
+            select {
+                padding: 0.5rem;
+            }
+
+            /*Grid*/
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: auto auto;
+                grid-template-areas: "header header"
+                                     "name_label name_input"
+                                     "email_label email_input"
+                                     "scale_label scale_input"
+                                     "where_label where_input" 
+                                     "time_label time_input"
+                                     "emotions_label emotions_checkbox"
+                                     "describe_label textarea"
+                                     "submit submit";
+                
+                justify-content: center;
+                grid-gap: 0.5rem;
+            }
+            #ueberschrift {grid-area: header;}
+            #label_name {grid-area: name_label;}
+            #name_input {grid-area: name_input;}
+            #label_email{grid-area: email_label}
+            #email_input {grid-area: email_input;}
+            #label_scale {grid-area: scale_label;}
+            #input_scale {grid-area: scale_input;}
+            #where_label {grid-area: where_label;}
+            #where_input {grid-area: where_input;}
+            #time_label {grid-area: time_label;}
+            #time_input {grid-area: time_input;}
+            #checkbox_label {grid-area: emotions_label;}
+            #checkbox_input {grid-area: emotions_checkbox;}
+            #textarea_label {grid-area: describe_label;}
+            #textarea {grid-area: textarea;}
+            #submit {grid-area: submit;}
+
+            /*Layout*/
+            label {
+                justify-self: end;
+                padding: .5rem;
+            }
+            #name_input, #email_input, #textarea, #input_scale {
+                justify-self: start;
+                min-width: 50%;
+                max-width: 100%;
+
+            }
+            #textarea{
+                height: 3rem;
+            }
+
+
+            #where_input {
+                max-width: 30%;
+                max-height: 80%;
+                align-self: center;
+            }
+
+            #ueberschrift {
+                justify-self: center;
+                font-size: 1.15rem;
+            }
+
+            #submit {
+                padding: .6rem;
+                margin-top: 1rem;
+                font-size: 1.15rem;
+                
+                justify-self: center;
+
+                color: white;
+                background-color: #7dbddf;
+
+                border: none;
+                border-radius: 5%;
+                box-shadow: 0 1px 2px rgb(55, 142, 255);
+
+                cursor: pointer;
+            }
+
+            #input_scale {
+                height: .9rem;
+                appearance: none;
+                outline: none;
+                align-self: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Good Vibes Form</h1>
+        <form class="container"> 
+            <p id="ueberschrift">Tell us something positive that happened to you today.</p>
+            <label for="name" id="label_name">Name</label>
+            <input type="text" name="name" id="name_input" required placeholder="Enter your name"><br>
+
+            <label for="email" id="label_email">Email</label>
+            <input type="text" id="email_input" required placeholder="Enter ypur email address" name="email"><br>
+
+            <label for="scale" id="label_scale"> On a scale of 1-10, how good was it?</label>
+            <input type="range" id="input_scale" min="1" max="10" value="5" name="range"><br>
+
+            <label for="where" id="where_label">Where did it happen?</label>
+            <select id="where_input">
+                <option name="home">At home</option>
+                <option name="commute">On my commute</option>
+                <option name="work">At work</option>
+                <option name="street">On the street</option>
+                <option name="other">Other</option>
+            </select><br>
+
+            <label for="time" id="time_label"> At what time of day did it happen?</label>
+            <div id="time_input">
+                <input type="radio" required name="time" value="morning"><label for="morning">Morning</label><br>
+                <input type="radio" required name="time" value="afternoon"><label for="afternoon">Afternoon</label><br>
+                <input type="radio" required name="time" value="evening"><label for="eveing">Evening</label><br>
+            </div>
+
+            <label for="emotions" id="checkbox_label">What emotions did you experience?<br> (Select all that apply)</label>
+            <div id="checkbox_input">
+                <input type="checkbox" value="excited" name="emotions"><label for="excited">Excited</label> <br>
+                <input type="checkbox" value="Humbled" name="emotions"><label for="Humbled">Humbles</label><br>
+                <input type="checkbox" value="Elated" name="emotions"><label for="Elated">Elated</label><br>
+                <input type="checkbox" value="Loved" name="emotions"><label for="Loved">Loved</label><br>
+                <input type="checkbox" value="enth" name="emotions"><label for="enth">Enthusiastic</label><br>
+            </div>          
+
+            <label for="enter_exp" id="textarea_label"> Please describe your positive experience.</label>
+            <textarea name="exp" id="textarea" required placeholder="Enter your experience here..."></textarea><br>
+
+            <button id="submit">Submit</button>
+        </form>
+    </body>
+</html>

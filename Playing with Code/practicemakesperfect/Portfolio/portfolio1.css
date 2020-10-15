@@ -1,0 +1,244 @@
+@media screen {
+
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+    /*Basic Styling*/
+    body {
+        margin: 0;
+        padding: 0;
+
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    /*Styling der Schriften */
+    h1 {
+        font-size: 2rem;    
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
+    h5 {
+        font-size: 1.1rem;;
+    }
+    h6 {
+        font-size: 1.1rem;
+        font-variant: small-caps;
+    }
+    h1, h2, h3,h4,h5,h6 {
+        margin: 0;
+        padding: 0.5rem;
+    }
+    p, li, a {
+        font-size: 1.1rem;
+    }
+    /*Navigation*/
+    nav {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+
+        background-color: #17120c;
+    }
+    #nav-ul {
+        display: flex;
+        justify-content: flex-end;
+        align-content: stretch;
+
+        margin: 0;
+    }
+    li > a {
+        text-decoration: none;
+        color: white;
+
+        padding: 1rem;
+    }
+    li {
+        list-style-type: none;
+
+        padding: 1rem;
+
+        justify-self: stretch;
+    }
+
+    li > a:hover, li > a:focus, li > a:active {
+        background-color: #45413D;
+    }
+
+    /*Welcome section */
+    #welcome-section {
+        height: 100vh;
+        max-width: 100vw;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #a4a199;
+        color: #17120c;
+    }
+    #welcome-img {
+        max-width: 25vw;
+        max-height: 90%;
+
+        display: block;
+    }
+
+    /* Projects Section */
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 0.25fr repeat(2,1fr);
+        justify-content: space-around;
+        grid-gap: 1rem;
+
+        background-color: #8b4b42;
+        padding: 2rem;
+
+        max-width: 100vw;
+    }
+
+    #header_projects {
+        grid-column: span 3;
+        justify-self: center;
+        color: #17120c;
+    }
+
+    .project-tyle {
+        justify-self: center;
+
+        background-color: #17120c;
+        box-shadow: 1px -1px 4px 0 #17120c;
+
+        max-width: 30vw;
+        max-height: 50vh;
+    }
+    .img_project {
+        max-height: 48vh;
+        max-width: 30vw;
+
+        display: block;
+        margin: auto;
+    }
+    .name_project {
+        padding: 0.5rem 0;
+     }
+
+    .link_project {
+        color: white;
+        text-decoration: none;
+    }
+
+    /*contact me*/
+    #contact_me_container {
+        padding: 2rem;
+        background-color: #a4a199;
+    }
+    #title_contact {
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+    #profile_link {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .link_profile {
+        color: black;
+        text-decoration: none;
+        padding-right: 2rem;
+
+        font-size: 1.3rem;
+    }
+
+    .fab {
+        padding: 0.2rem;
+    }
+
+    /*transform */
+    .anim {
+        transform: translate(0);
+        transition: 0.3s ease;
+    }
+    .anim:hover {
+        transform: translateY(2px);
+    }
+
+    /*footer*/
+    #footer-text {
+        text-align: center;
+        margin: 0;
+
+        color:  #17120c;
+    }
+    footer {
+        background-color: #a4a199;
+        margin: 0;
+        padding: 2rem;
+
+        border-top: 2px solid #17120c;
+    }
+
+
+    @media screen and (max-width: 800px) {
+        #projects {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 0.25fr repeat(3,1fr);
+    
+            max-width: 100vw;
+        }
+    
+        #header_projects {
+            grid-column: span 2;
+        }
+    
+        .project-tyle {    
+            max-width: 45vw;
+        }
+        .img_project {
+            max-height: 100vh;
+            max-width: 45vw;
+        }
+    }
+        
+    @media screen and (max-width: 520px) {
+        #projects {
+            display: block;
+            max-width: 100vw;
+
+        }        
+        .img_project {
+            max-height: 100vh;
+            max-width: 90vw;
+
+            display: block;
+            margin: auto;
+
+            box-shadow: 1px -1px 4px 0 #17120c;
+        }  
+        .project-tyle{
+            padding: 1rem 0;
+            background-color: #8b4b42;
+            box-shadow: none;
+        }
+
+        #header_projects {
+            text-align: center;
+        }
+
+        #nav-ul {
+            justify-content: space-between;
+            padding: 0;
+        }
+        #navbar {
+            margin: 0;
+        }
+    }
+    
+} /*end media*/

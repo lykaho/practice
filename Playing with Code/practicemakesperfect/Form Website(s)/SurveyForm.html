@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form - Free Code Camp</title>
+
+        <style>                
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+            html {
+                background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                
+                background-color: rgba(58, 58, 158, 0.8);
+                margin: 0;
+                padding: 2rem;
+
+                font-family: 'Poppins', sans-serif;
+            }
+
+            /*header*/
+            header {
+                text-align: center;
+                color: white;
+            }
+            .description {
+                font-style: italic;
+            }
+
+            /*form*/
+            form {
+                max-width: 50%;
+                background-color: rgba(36, 35, 68, 0.8);
+
+                margin: auto;
+                padding: 3rem;
+
+                border-radius: 1%;
+
+            }
+            label {
+                color: white;
+                font-size: 1.15rem;
+            }
+
+            .form_section {
+                padding: 0.5rem;
+            }
+           input, select, textarea {
+                font-size: 1.15rem;
+                height: 1.8rem;
+                
+           }
+           #name, #email, #age, #work, #fav, textarea {
+               width: 100%;
+           }
+
+           #name, #email, #age, #work, #fav {
+               border-radius: 1.5%;
+               border: none;
+           }
+
+           textarea {
+               height: 4rem;
+           }
+
+           /* Label + Checkbox align*/
+
+           .checkbox, .radio {
+               vertical-align: bottom;
+               position: relative;
+               top: 3px;
+           }
+
+           /*button*/
+           button {
+               cursor: pointer;
+
+               padding: 0.5rem;
+               margin: auto;
+               display: block;
+               width: 100%;
+
+               background-color: #37af65;
+               color: white;
+               font-size: 1.15rem;
+
+               border: none;
+               border-radius: 1.5%;
+           }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>freeCodeCamp Survey Form</h1>
+            <p class="description"> Thank you for taking the time to help us improve the platform </p>
+        </header>
+        <form>
+            <div class="form_section" >
+                <label for="name">Name<br><input name="name" id="name" type="text" placeholder="Your Name" required></label><br>
+            </div>
+            <div class="form_section" >
+                <label for="email">Email<br><input id="email" type="text" name="email" required placeholder="Your Email"></label><br>
+            </div>
+            <div class="form_section">
+                <label for="age">Age (optional)<br><input id="age" type="number" min="10" max="110" placeholder="Age"></label><br>
+            </div>
+            <div class="form_section">
+                <label for="work">Which option best describes your current role?<br>
+                    <select name="work" id="work">
+                        <option disabled selected value>Select Your Current Role</option>
+                        <option name="work" value="fulltime">Full Time Job</option>
+                        <option name="work" value="student">Student</option>
+                        <option name="work" value="ftlearner">Full Time Learner</option>
+                        <option name="work" value="notsay">Prefer not to say</option>
+                        <option name="work" value="other">Other</option>
+                    </select>
+                </label><br>
+            </div>
+            <div class="form_section" class="label_improve">
+                <label for="recommend" >Would you recommend freeCodeCamp to a friend?<br>
+                    <input class="radio" name="recommend" type="radio" value="def">Definitely<br>
+                    <input class="radio" name="recommend" type="radio" value="maybe">Maybe<br>
+                    <input class="radio" name="recommend" type="radio" value="not-sure">Not sure
+                </label><br>
+            </div>
+            <div class="form_section">
+                <label for="fav">What is your favorite feature of freeCodeCamp? <br>
+                    <select name="fav" id="fav">
+                        <option disabled name="fav" selected>Select an Option</option>
+                        <option name="fav" value="challenge_fav">Challenges</option>
+                        <option name="fav" value="projects">Projects</option>
+                        <option name="fav" value="community">Community</option>
+                        <option name="fav" value="os">Open Source</option>
+                    </select><br>
+                </label>
+            </div>
+            <div class="form_section">
+                <label id="label_improve" for="improve"> What would you like to see improved? (Check all that apply) <br>
+                    <input class="checkbox" type="checkbox" name="improve" value="fe-projects">Front-end Projects<br>
+                    <input  class="checkbox" type="checkbox" name="improve" value="be-projects">Back-end Projects<br>
+                    <input  class="checkbox" type="checkbox" name="improve" value="dv">Data Visualization<br>
+                    <input  class="checkbox" type="checkbox" name="improve" value="Challenges_checkbox">Challenges<br>
+                    <input  class="checkbox" type="checkbox" name="improve" value="os-community">Open Source Community<br>
+                    <input  class="checkbox" type="checkbox" name="improve" value="g-help-room">Gitter help rooms<br>
+                    <input  class="checkbox" type="checkbox" name="improve" value="videos">Videos<br>
+                    <input  class="checkbox" type="checkbox" name="improve" value="meetups">City Meetups<br>
+                    <input  class="checkbox" type="checkbox" name="improve" value="wiki">Wiki<br>
+                    <input  class="checkbox" type="checkbox" name="improve" value="forum">Forum<br>
+                    <input  class="checkbox" type="checkbox" name="improve" value="add-course">Additional Courses
+                </label><br>
+            </div>
+            <div class="form_section">
+                <label for="comments">Any comments or suggestions?<br>
+                    <textarea name="comments" placeholder="Enter your comment here..."></textarea>
+                </label><br>
+            </div>
+            <div class="form_section">
+                <button for="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
