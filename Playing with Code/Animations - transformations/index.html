@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+            body {
+            font-family: 'Roboto', sans-serif;
+            }
+
+            /*Bounce In*/
+            #bounce_in {
+            text-align: center;
+            color: blue;
+            animation-name: bounceIn;
+            animation-duration: 0.3s;
+            }
+            @keyframes bounceIn {
+            0% {
+                transform: scale(0.1);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.2);
+                opacity: 100;
+            }
+            100% {
+                transform: scale(1);
+            }
+            }
+            #balls {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            }
+            .ball {
+            padding: 1rem;
+            border-radius: 50px;
+            
+            width: 0.5rem;
+            height: 0.5rem;
+            margin: 0.2rem;
+            }
+            #aqua {
+            background-color: aqua;
+            animation: aqua_ball 3s linear 
+            0s infinite normal 
+            none running;
+            }
+
+            #red {
+            background-color: red;
+            animation: red_ball 3s ease-out
+            0.2s infinite normal
+            none running;
+            }
+
+            @keyframes aqua_ball {
+            0% {
+                transform: translateY(0);
+            }
+            80% {
+                transform: translateY(50vh);
+            }
+            100% {
+                transform: translateY(0);
+            }
+            }
+            @keyframes red_ball {
+            0% {
+                transform: translateY(0);
+            }
+            80% {
+                transform: translateY(50vh);
+            }
+            100% {
+                transform: translateY(0);
+            }
+            }
+
+
+            /*Kreis zu Quadrat*/
+            #kreis_quadrat {
+            animation-name: kreis-quadrat;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            }
+            @keyframes kreis-quadrat {
+            0%, 100% {
+                background-color: red;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+            }
+            50% {
+                background-color: yellow;
+                width: 50vh;
+                height: 50vh;
+                border-radius: 0;
+            }
+            }
+
+            #hello {
+            background-color: aqua;
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            animation: hello 10s linear 0s infinite normal none running;
+            }
+
+            @keyframes hello {
+            0%, 100% {
+                transform: translate(0,0);
+            }
+            25% {
+                transform: translate(250px,0);
+            }
+            50% {
+                transform: translate(250px,250px);
+            }
+            75% {
+                transform: translate(0,250px);
+            }
+            }
+            #vinyil {
+            background-color: purple;
+            color: white;
+            padding: 35px 0;
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            border-radius: 50px;
+            animation: vinyl 4s linear infinite;
+            }
+
+            @keyframes vinyl {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+            }
+            #Scale1 {
+            height: 30px;
+            width: 100px;
+            background-color: orange;
+            border-radius: 50px;
+            
+            text-align: center;
+            padding: 35px 0;
+            animation: scale1 7s steps(1) 0s infinite;
+            }
+            @keyframes scale1 {
+            0%,100% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(-1);
+            }
+            50% {
+                transform: scale(2);
+            }
+            75% {
+                transform: scale(0.5);
+            }
+            }
+            #skew1 {
+            width: 100px;
+            height: 50px;
+            background-color: maroon;
+            animation: skewX1 10s steps(1) 0s infinite;
+            }
+            @keyframes skewX1 {
+            0%,100% {
+                transform: skewX(0deg);
+            }
+            20% {
+                transform: skewX(10deg);
+            }
+            40% {
+                transform: skewX(45deg);
+            }
+            60% {
+                transform: skewX(90deg);
+            }
+            80% {
+                transform: skewX(120deg); /*same as 60deg*/
+            }  
+            }
+            #zoom1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: zoom1 2s linear 0s infinite;
+            }
+            @keyframes zoom1 {
+            0%,100% {
+                transform: translate3d(0, 0, 0);
+            }
+            50% {
+                transform: perspective(500px) translate3d(0,0,200px);
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="bounce_in">
+            <h1>Bounce In</h1>
+          </div>
+          
+          <section id="balls">
+            <div id="aqua" class="ball"></div>
+            <div id="red" class="ball"></div>
+          </section>
+          
+          
+          <div id="hello">Hello</div>
+          <div id="vinyil">Vinyl</div>
+          <div id="Scale1">Scale</div>
+          <div id="skew1">Skew</div>
+          <div id="zoom1">Zoom</div>
+          <div id="kreis_quadrat"></div>
+    </body>
+  </html>
