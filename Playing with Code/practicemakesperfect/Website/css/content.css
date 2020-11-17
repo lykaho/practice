@@ -13,22 +13,47 @@
 
         height: 50vh;
         width: 100vw;
+
+        padding: 1rem 0;        
     }
     .gridContainer {
         display: grid;
-        grid-template-areas: ". weclomeTitle ."". welcomeSubtitle ."". welcomeText .";
-        grid-template-columns: 10vw 1fr 10vw;
-        align-content: center;
+        grid-template-areas: ". weclomeTitle bild ."". welcomeSubtitle bild ."". welcomeText bild.";
+        grid-template-columns: 10vw 1fr 1fr 10vw;
+        grid-template-rows: 1fr 0.75fr 2fr;
+
+        justify-items: center;
     }
 
     #weclomeTitle {
         grid-area: weclomeTitle;
+        align-self: flex-end;
+        text-align: center;
+
+        margin: 0;
     }
     #welcomeSubtitle {
         grid-area: welcomeSubtitle;
+        align-self: center;
+        text-align: center;
+
+        margin: 0;
     }
     #welcomeText {
         grid-area: welcomeText;
+        align-self: flex-start;
+        text-align: center;
+
+        margin: 0;
+    }
+
+    #bildMe {
+        max-width: 100%;
+        max-height: 100%;
+
+        grid-area: bild;
+
+        justify-self: center;
     }
 
 }/*end media*/
