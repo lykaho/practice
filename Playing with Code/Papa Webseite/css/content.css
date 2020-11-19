@@ -10,38 +10,58 @@ content.css
 @media screen {
 
     /*Header*/
-    
-
-
-    /* Willkommen*/
-    .fotofrank {
-        max-height: 100%;
-    }
-
-
-    /*Buecher*/
-    .header_buecher {
-            justify-self: center;
-            align-self: center;
-        }
-
-    .tor-der-traume_bild, .Arena-Fussballbuch_bild, .zeichen_christi_bild {
-        align-self: center;
-        justify-self: center;
-        max-height: 90%;
-        max-width: 80%;
-        justify-content: space-between;
-    }
-
-    .tor-der-traume_text, .Arena-Fussballbuch_text, .zeichen_christi_text {
-        align-self: center;
-        justify-self: center;
-        
-    }
 
     /*Footer*/
 
 
 
+    /*Buecher Vorstellung Seite*/
+
+    .site-contentRoman {
+    
+    }
+
+    .buecher_1, .buecher_2 {
+        display: grid;
+        grid-template-rows: 0.5fr 1fr;
+
+        justify-items: center;
+        overflow: auto;
+
+        max-height: 60vh;
+
+        padding: 1rem;
+    }
+    .buecher_1 {
+        grid-template-areas: "bild title" "bild text";
+        grid-template-columns: 0.5fr 1fr;
+    }
+    .buecher_2 {
+        grid-template-areas: "title bild" "text bild";
+        grid-template-columns: 1fr 0.5fr;
+    }
+
+    .headerBuch {
+        grid-area: title;
+        text-align: center;
+        align-self: center;
+    }
+    .bildBuch {
+        grid-area: bild;
+
+        max-height: 90%;
+        max-width: 100%;
+
+        align-self: center;
+    }
+    .beschreibungBuch {
+        grid-area: text;
+
+        text-align: justify;
+    }
+
+    .containerBuch {
+        background-color: white;
+    }
 
 } /* end media */

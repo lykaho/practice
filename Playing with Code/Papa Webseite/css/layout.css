@@ -14,13 +14,18 @@ layout.css
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
+.header {
+    max-width: 80vw;
+    padding: 1rem;
+    margin: 0 auto;
+}
 
 /********************
  Grid 
  ********************/
     main {
-        max-width: 60%;
-        margin: auto;
+        max-width: 80vw;
+        margin: 0 auto;
     }
     
 
@@ -29,62 +34,16 @@ h1, h2, h3, h4, h5, h6 {
     .header {
         text-align: center;
     }
-    /*Basis Grid*/
-
-    /*Willkommen section */
-    .willkomen { /*container*/
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 0.2fr;
-        grid-template-areas: "bild text";
-
-        align-items: center;
-        justify-content: space-around;
-
-        margin: 0;
-        padding: 0;
-    }
-    .fotofrank {
-        grid-area: bild;
-        justify-self: center;
-        max-height: 100%;
-        max-width: 100%;
-    }
-    .willkommen_text {
-        grid-area: text;
-        place-self: center;
-        align-self: center;
-        
-    }
 
     /*Section buecher*/
-    .buecher {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto auto;
-        grid-template-areas: "header header header"
-                            "bild_buch_1 bild_buch_2 bild_buch_3"
-                            "text_buch_1 text_buch_2 text_buch_3";
-        justify-content: center;
-    }
-
-
-    .header_buecher {grid-area: header;}
-    .zeichen_christi_bild {grid-area: bild_buch_1;}
-    .zeichen_christi_text {grid-area: text_buch_1;}
-    .tor-der-traume_bild {grid-area: bild_buch_2;}
-    .tor-der-traume_text {grid-area: text_buch_2;}
-    .Arena-Fussballbuch_bild {grid-area: bild_buch_3;}
-    .Arena-Fussballbuch_text {grid-area: text_buch_3;}
-
 
     /* Abstände */
 
     article {
-        margin: 1rem;
+        margin: 1rem 0;
     }
     section {
-        margin: 2rem;
+        margin: 2rem 0;
     }
 
     header {
