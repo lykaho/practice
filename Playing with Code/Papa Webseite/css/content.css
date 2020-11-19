@@ -9,6 +9,15 @@ content.css
 
 @media screen {
 
+    /*Zitat Top of Page*/
+    .quotePapa {
+        text-align: center;
+        font-style: italic;
+    }
+    .quoteBeginPage {
+        margin-top: 2rem;
+        background-color: white;
+    }
     /*Buecher*/
 
     .buecher_1, .buecher_2 {
