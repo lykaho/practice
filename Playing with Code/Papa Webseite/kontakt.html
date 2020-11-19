@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Frank Littek - Kontakt</title>
+        <meta charset="utf-8">
+            <meta name="author" content="Lynn Höltge">
+            <meta name="description" content="Nehmen Sie Kontakt mit Frank Littek auf.">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+            <meta name="keywords" content="Frank Littek, Kontakt">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Frank Littek</h1>
+            <h6>Autor - Journalist - Schriftsteller</h6>
+        </header>  
+        <nav class="nav_container">
+            <ul class="site-nav-list">
+                <li class="start"><a href="index.html" class="aNav">Startseite</a></li>
+                <li class="roman"><a href="romane.html" class="aNav">Romane</a></li>
+                <li class="kinder"><a href="kinderbuecher.html" class="aNav">Kinderbücher</a></li>
+                <li class="sach"><a href="sachbuecher.html" class="aNav">Sachbücher</a></li>
+                <li class="pr"><a href="PR.html" class="aNav">Public Relations</a></li>
+                <li class="journalism"><a href="journalismus.html" class="aNav">Journalismus</a></li>
+                <li class="story"><a href="storytelling.html" class="aNav">Storytelling</a></li> 
+                <li class="u-r-here kontakt"><a href="kontakt.html" class="aNav">Kontakt</a></li>
+            </ul>
+        </nav>
+        <main class="site-content contentForm">
+            <form class="containerForm">
+                <header id="titleForm">
+                    <h2>Kontakt</h2>
+                    <p>Haben Sie Fragen oder möchten mit mir arbeiten?</p>
+                </header>
+                <div class="formSection">
+                    <label for="name" id="labelName">Name</label><br>
+                    <input type="text" name="name" id="nameInput" required placeholder="Ihr Name"><br>
+                </div>
+                <div class="formSection">
+                    <label for="email" id="labelEmail">Email</label><br>
+                    <input type="email" name="email" id="emailInput" required placeholder="Ihre Emailadresse"><br>
+                </div>
+                <div class="formSection">
+                    <label for="betreff" id="labelBetreff">Betreff</label><br>
+                    <input type="text" name="betreff" required id="betreffInput" placeholder="Betreff"><br>
+                </div>
+                <div class="formSection">
+                    <label for="nachricht" id="labelNachricht">Nachricht</label><br>
+                    <textarea placeholder="Hinterlassen Sie Ihre Nachricht" required></textarea><br>
+                </div>
+                <div class="formSection">
+                    <input type="checkbox" required name="datenschutz" class="checkbox" value="datenschutzAkzeptiert">
+                    <label for="datenschutz" id="labelDatenschutz">Datenschutzerklärung akzeptieren</label><br>
+                </div>
+                <div class="formSection">
+                    <button id="button">Senden</button>
+                </div>
+            </form>
+            <section class="seiteKontakt">
+                <img src="Bilder/Papabild.JPG" alt="Ein Bild des Autors" id="bildKontakt">
+            </section>
+        </main>
+    </body>
+</html>

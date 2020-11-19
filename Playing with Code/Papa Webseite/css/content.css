@@ -15,7 +15,7 @@ content.css
         font-style: italic;
     }
     .quoteBeginPage {
-        margin-top: 2rem;
+        padding-top: 2rem;
         background-color: white;
     }
     /*Buecher*/
@@ -60,7 +60,7 @@ content.css
     }
 
     .containerBuch {
-        background-color: white;
+        background-color: #d5d6d2;
     }
 
 } /* end media */
