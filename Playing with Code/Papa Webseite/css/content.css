@@ -9,14 +9,7 @@ content.css
 
 @media screen {
 
-    /*Header*/
-
-    /*Footer*/
-
-
-
-    /*Buecher Vorstellung Seite*/
-
+    /*Buecher*/
 
     .buecher_1, .buecher_2 {
         display: grid;
