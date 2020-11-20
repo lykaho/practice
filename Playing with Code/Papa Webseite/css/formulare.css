@@ -30,9 +30,7 @@ Stylesheet für Formulare und ihre Elemente
     }
 
     /*Seite Kontakt*/
-    .seiteKontakt {
-        align-self: center;
-    }
+
     #bildKontakt {
         max-width: 80%;
         max-height: 100%;
