@@ -68,8 +68,7 @@ basis.css
         font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
         /* Schriftgröße festlegen */
         font-size: 1rem;
-        background-color: white;
-        color: #2f2e33;
+        background-color: #f1f1f2;
 
         min-width: 320px;
         margin: auto;
