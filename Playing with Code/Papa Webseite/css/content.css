@@ -65,4 +65,15 @@ content.css
         background-color: white;
     }
 
+    /* Journalismus */
+
+    .nurText {
+        padding: 1rem;
+    }
+    .pText {
+        margin: 0;
+        padding-bottom: 0.75rem;
+        text-align: center;
+    }
+    .headerText {}
 } /* end media */
