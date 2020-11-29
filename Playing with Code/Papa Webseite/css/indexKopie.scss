@@ -1,0 +1,143 @@
+@media screen {
+    @mixin gridBuecher($area, $columns, $rows,$align) {
+        display: grid;
+        grid-template-areas: $area;
+        grid-template-columns: $columns;
+        grid-template-rows: $rows;
+        justify-items: center;
+        justify-content: $align;
+        align-items: center;
+        align-content: center;
+        max-height: 100%;
+    }
+    
+    @mixin box() {
+        background-color: white;
+        box-shadow: 3px 11px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        max-height: 60vh;
+    }
+    
+    html {
+        background: linear-gradient(180deg, #FFFFFF 0%, #FDFDFD 0.01%, #F9F8F8 125.56%);
+        margin: 0;
+        scroll-behavior: smooth;
+        body {
+            margin: 0;
+            .navUndHeader {
+
+                margin: 0;
+
+                background-color: #F9F8F8;
+
+                position: sticky;
+                position: -webkit-sticky;
+                top:0;
+
+                z-index: 1;
+            }
+            main {
+                max-width: 80vw;
+                margin: 0 auto;
+                z-index: 0;
+                .buecherAll {
+                    height: 80vh;
+
+                    .headerBuecher {
+                        padding-bottom: 2rem;
+                    }
+                    .buecherContainer {
+                        @include gridBuecher("buch1 buch2 buch3", repeat(3, 1fr), auto, space-between);
+                        @include box();
+                        margin: 0;
+                        .buecher {
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                            padding: 1rem;
+                            img {
+                                max-width: 100%;
+                                max-height: 45vh;
+                            }
+                        }
+                    }
+                }
+                .ganzeSeite {
+                    height: 80vh;
+                    @include gridBuecher(".""welcome"".", auto, 20vh 80vh 20vh, center);
+
+                    .welcomeContainer {
+                        grid-area: welcome;
+
+                        @include gridBuecher("welcomeT Bild", repeat(2, 1fr), auto, end);
+                        @include box();
+
+                        height: 100vh;
+
+                        margin: 0;
+                        .welcomeText {
+                            grid-area: welcomeT;
+                            padding-left: 2rem;
+                        }
+                        img {
+                            grid-area: Bild;
+                            max-height: 50vh;
+                            max-width: 100%;
+
+                            padding: 1rem;
+                        }
+                    }
+                }
+                
+            }
+            .footer {
+                margin: 0;
+                padding: 0;
+
+                background-color: #312F2F;
+                color: #F9F8F8;
+
+                @include gridBuecher("kontakt . infos" ". top .", 2fr 1fr 2fr, 1fr 0.2fr, center);
+                .kontakt{
+                    grid-area: kontakt;
+                    padding: 1rem;
+                }
+                .infos {
+                    grid-area: infos;
+                    padding: 1rem;
+                }
+                .nachOben {
+                    grid-area: top;
+                    .fa-angle-up {
+                        color: #F9F8F8;
+
+                        padding: 0.2rem 0.7rem;
+                        border: #F9F8F8 1px solid;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                section {
+                    margin: 0;
+                    article {
+                        margin: 0;
+                        padding: 1rem;
+                        p {
+                            margin: 0;
+                            a {
+                                color: #F9F8F8;
+                            }
+                        }
+                    }
+                    p {
+                    margin: 0;
+                    }
+                    a {
+                        color: #F9F8F8;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+} /*end media */

@@ -12,7 +12,7 @@ navi-grid.css
         background-color: #763626;
         position: sticky;
         position: -webkit-sticky;
-        top:0;        
+        top:0;
     }
     .site-nav-list {
         display: grid;

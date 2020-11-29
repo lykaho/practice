@@ -18,8 +18,8 @@ basis.css
         /* Box-Modell umstellen auf border-box, Teil 1/2 */ 
         box-sizing: border-box; 
         
-        /* erzeugt inaktiven Rollbalken und verhindert so ein "Hüpfen" bei kurzen Webseiten */
-        overflow-y: scroll; 
+        /* erzeugt inaktiven Rollbalken und verhindert so ein "Hüpfen" bei kurzen Webseiten 
+        overflow-y: scroll; */
         
         /* verhindert Zoom nach Wechsel von Porträt/Landscape in IE on Windows Phone and in iOS. */
         -webkit-text-size-adjust: 100%; 
