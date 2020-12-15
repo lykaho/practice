@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
         <meta name="keywords" content="Frank Littek, Journalist">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/indexKopie.css">
+        <link rel="stylesheet" type="text/css" href="aos.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     </head>
     <body class="grid_1">
         <header class="header">
@@ -72,5 +75,51 @@
                 </article>
             </section>          
         </main>
+        <footer class="footer">
+            <section class="kontakt">
+                <p><b>Kontakt</b></p>
+                <p>Frank Littek</p>
+                <p>Birkenfeld 25</p>
+                <p>27404 Heeslingen</p>
+            </section>
+            <section class="infos">
+                <article>
+                    <p><a href="Impressum.html">Impressum</a></p>
+                    <p><a href="datenschutz.html">Datenschutz</a></p>
+                </article>
+                <article>
+                    <p class="copyright">© Copyright 2020. Frank Littek - All rights reserved. </p>
+                </article>
+            </section>
+            <section class="nachOben">
+                <a href=#top><i class="fas fa-angle-up fa-2x"></i></a>
+            </section>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="aos.js"></script>
+        <script type="text/javascript">
+            AOS.init({
+                  // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+                
+    
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 300, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 300, // values from 0 to 3000, with step 50ms
+                easing: 'ease-out', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-center', // defines which position of the element regarding to window should trigger the animation
+            });
+        </script>
     </body>
 </html>
