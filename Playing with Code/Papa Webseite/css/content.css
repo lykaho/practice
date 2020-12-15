@@ -59,15 +59,20 @@ content.css
         text-align: justify;
     }
 
+    .linkBuch {
+        color: #0f4762;
+        text-decoration: none;
+    }
+
     .containerBuch {
     /*    background-color: #d5d6d2;*/
         background-color: white;
         border-radius: 10px;
-        box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.25);
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     }
     .containerBuch:hover {
         transition:  box-shadow 300ms ease-in-out;
-        box-shadow: 3px 11px 10px rgba(0, 0, 0, 0.25);
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
     }
 
     /* Journalismus */
