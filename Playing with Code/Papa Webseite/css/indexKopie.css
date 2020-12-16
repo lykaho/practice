@@ -10,7 +10,9 @@
   }
   html body .navUndHeader {
     margin: 0;
-    background-color: #F9F8F8;
+    background-color: #FFFBF7;
+  }
+  html body .navUndHeader .nav_container {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -23,6 +25,7 @@
   }
   html body main .buecherAll {
     height: 80vh;
+    margin: 0;
   }
   html body main .buecherAll .headerBuecher {
     padding-bottom: 2rem;
@@ -44,13 +47,22 @@
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    max-height: 100%;
+    /*
+        max-height: 100%;*/
     background-color: white;
-    -webkit-box-shadow: 3px 11px 10px rgba(0, 0, 0, 0.25);
-            box-shadow: 3px 11px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     max-height: 60vh;
     margin: 0;
+  }
+  html body main .buecherAll .buecherContainer:hover {
+    -webkit-transition: -webkit-box-shadow 300ms ease-in-out;
+    transition: -webkit-box-shadow 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+    -webkit-box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
   }
   html body main .buecherAll .buecherContainer .buecher {
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -62,7 +74,8 @@
     max-height: 45vh;
   }
   html body main .ganzeSeite {
-    height: 80vh;
+    height: 60vh;
+    margin: 0;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "." "welcome" ".";
@@ -79,7 +92,8 @@
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    max-height: 100%;
+    /*
+        max-height: 100%;*/
   }
   html body main .ganzeSeite .welcomeContainer {
     -ms-grid-row: 2;
@@ -101,14 +115,23 @@
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    max-height: 100%;
+    /*
+        max-height: 100%;*/
     background-color: white;
-    -webkit-box-shadow: 3px 11px 10px rgba(0, 0, 0, 0.25);
-            box-shadow: 3px 11px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     max-height: 60vh;
-    height: 100vh;
+    /*  height: 100vh;*/
     margin: 0;
+  }
+  html body main .ganzeSeite .welcomeContainer:hover {
+    -webkit-transition: -webkit-box-shadow 300ms ease-in-out;
+    transition: -webkit-box-shadow 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+    -webkit-box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
   }
   html body main .ganzeSeite .welcomeContainer .welcomeText {
     -ms-grid-row: 1;
@@ -127,7 +150,7 @@
   html body .footer {
     margin: 0;
     padding: 0;
-    background-color: #312F2F;
+    background-color: #120803;
     color: #F9F8F8;
     display: -ms-grid;
     display: grid;
@@ -145,7 +168,8 @@
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    max-height: 100%;
+    /*
+        max-height: 100%;*/
   }
   html body .footer .kontakt {
     -ms-grid-row: 1;
