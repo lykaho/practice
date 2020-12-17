@@ -30,6 +30,9 @@ Stylesheet für Formulare und ihre Elemente
     }
 
     /*Seite Kontakt*/
+    .contentForm {
+        height: 80vh;
+    }
 
     #bildKontakt {
         max-width: 80%;
@@ -86,7 +89,7 @@ Stylesheet für Formulare und ihre Elemente
         border: none;
         border-radius: 1%;
 
-        background-color: #a1d6e2;
+        background-color: #ffe9c5;
 
         padding: 0.75rem;
         text-align: center;
@@ -97,11 +100,13 @@ Stylesheet für Formulare und ihre Elemente
     }
 
     #button:hover, #button:active {
-        transform: scale(1.1);
         transition: 0.3s;
         transition-timing-function: linear;
 
-        background-color: #1995ad;
+        transition: 0.3s;
+        transition-timing-function: linear;
+
+        background-color: #622a0f;
         color: #f1f1f2;
     }
 } /*end media*/

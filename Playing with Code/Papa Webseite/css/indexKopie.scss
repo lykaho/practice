@@ -15,7 +15,6 @@
         background-color: white;
         box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
-        max-height: 60vh;
         &:hover {
             transition:  box-shadow 300ms ease-in-out;
             box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
@@ -46,12 +45,10 @@
                 margin: 0 auto;
                 z-index: 0;
                 .buecherAll {
-                    height: 80vh;
+                    max-height: 70vh;
                     margin: 0;
+                    padding: 1rem 0;
 
-                    .headerBuecher {
-                        padding-bottom: 2rem;
-                    }
                     .buecherContainer {
                         @include gridBuecher("buch1 buch2 buch3", repeat(3, 1fr), auto, space-between);
                         @include box();
@@ -67,7 +64,7 @@
                     }
                 }
                 .ganzeSeite {
-                    height: 60vh;
+                    max-height: 70vh;
                     margin: 0;
                     @include gridBuecher(".""welcome"".", auto, 20vh 80vh 20vh, center);
 
@@ -76,10 +73,9 @@
 
                         @include gridBuecher("welcomeT Bild", repeat(2, 1fr), auto, end);
                         @include box();
+                        max-height: 65vh;
 
-                      /*  height: 100vh;*/
-
-                        margin: 0;
+                        padding: 1rem 2rem;
                         .welcomeText {
                             grid-area: welcomeT;
                             padding-left: 2rem;
@@ -96,7 +92,7 @@
                 
             }
             .footer {
-                margin: 0;
+                margin: 2rem 0 0;
                 padding: 0;
 
                 background-color: #120803;

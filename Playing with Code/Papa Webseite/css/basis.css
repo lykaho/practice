@@ -24,7 +24,9 @@ basis.css
         /* verhindert Zoom nach Wechsel von Porträt/Landscape in IE on Windows Phone and in iOS. */
         -webkit-text-size-adjust: 100%; 
         -ms-text-size-adjust: 100%;     
+        
     }
+
     
     /* Box-Modell umstellen auf border-box, Teil 2/2 */ 
     *, *::before, *::after {
@@ -87,6 +89,10 @@ basis.css
         margin: 0 auto;
     }
 
+    /* Links */
+    a:active, a:focus {
+        outline: none;
+    }
 
 
 } /* end media */

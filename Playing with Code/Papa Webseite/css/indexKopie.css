@@ -24,11 +24,9 @@
     z-index: 0;
   }
   html body main .buecherAll {
-    height: 80vh;
+    max-height: 70vh;
     margin: 0;
-  }
-  html body main .buecherAll .headerBuecher {
-    padding-bottom: 2rem;
+    padding: 1rem 0;
   }
   html body main .buecherAll .buecherContainer {
     display: -ms-grid;
@@ -53,7 +51,6 @@
     -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    max-height: 60vh;
     margin: 0;
   }
   html body main .buecherAll .buecherContainer:hover {
@@ -74,7 +71,7 @@
     max-height: 45vh;
   }
   html body main .ganzeSeite {
-    height: 60vh;
+    max-height: 70vh;
     margin: 0;
     display: -ms-grid;
     display: grid;
@@ -121,9 +118,8 @@
     -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    max-height: 60vh;
-    /*  height: 100vh;*/
-    margin: 0;
+    max-height: 65vh;
+    padding: 1rem 2rem;
   }
   html body main .ganzeSeite .welcomeContainer:hover {
     -webkit-transition: -webkit-box-shadow 300ms ease-in-out;
@@ -148,7 +144,7 @@
     padding: 1rem;
   }
   html body .footer {
-    margin: 0;
+    margin: 2rem 0 0;
     padding: 0;
     background-color: #120803;
     color: #F9F8F8;

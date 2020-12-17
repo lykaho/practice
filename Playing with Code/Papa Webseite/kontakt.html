@@ -7,12 +7,14 @@
             <meta name="description" content="Nehmen Sie Kontakt mit Frank Littek auf.">
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
             <meta name="keywords" content="Frank Littek, Kontakt">
-            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css"><!--
+                <link rel="stylesheet" type="text/css" href="aos.css">-->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     </head>
     <body>
         <header class="header">
             <h1>Frank Littek</h1>
-            <h6>Autor - Journalist - Schriftsteller</h6>
+            <p class="vorherH6">Autor - Journalist - Schriftsteller</p>
         </header>  
         <nav class="nav_container">
             <ul class="site-nav-list">
@@ -26,7 +28,7 @@
             </ul>
         </nav>
         <main class="site-content contentForm">
-            <form class="containerForm">
+            <form class="containerForm" data-netlify=true name="contact">
                 <header id="titleForm">
                     <h2>Kontakt</h2>
                     <p>Haben Sie Fragen oder möchten mit mir arbeiten?</p>
@@ -48,7 +50,7 @@
                     <textarea placeholder="Hinterlassen Sie Ihre Nachricht" required></textarea><br>
                 </div>
                 <div class="formSection">
-                    <input type="checkbox" required name="datenschutz" class="checkbox" value="datenschutzAkzeptiert">
+                    <input type="checkbox" required name="datenschutz" id="datenschutz" class="checkbox" value="datenschutzAkzeptiert">
                     <label for="datenschutz" id="labelDatenschutz">Datenschutzerklärung akzeptieren</label><br>
                 </div>
                 <div class="formSection">
@@ -59,5 +61,25 @@
                 <img src="Bilder/Papabild  ohne Hintergrund.png" alt="Ein Bild des Autors" id="bildKontakt">
             </section>
         </main>
+        <footer class="footer">
+            <section class="kontakt">
+                <p><b>Kontakt</b></p>
+                <p>Frank Littek</p>
+                <p>Birkenfeld 25</p>
+                <p>27404 Heeslingen</p>
+            </section>
+            <section class="infos">
+                <article>
+                    <p><a href="Impressum.html">Impressum</a></p>
+                    <p><a href="datenschutz.html">Datenschutz</a></p>
+                </article>
+                <article>
+                    <p class="copyright">© Copyright 2020. Frank Littek - All rights reserved. </p>
+                </article>
+            </section>
+            <section class="nachOben">
+                <a href=#top><i class="fas fa-angle-up fa-2x"></i></a>
+            </section>
+        </footer>
     </body>
 </html>
