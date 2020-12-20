@@ -45,7 +45,6 @@
                 margin: 0 auto;
                 z-index: 0;
                 .buecherAll {
-                    max-height: 70vh;
                     margin: 0;
                     padding: 1rem 0;
 
@@ -64,21 +63,25 @@
                     }
                 }
                 .ganzeSeite {
-                    max-height: 70vh;
                     margin: 0;
-                    @include gridBuecher(".""welcome"".", auto, 20vh 80vh 20vh, center);
+                    @include gridBuecher(".""welcome"".", auto, auto, center);
+                    padding: 2rem 0;
 
                     .welcomeContainer {
                         grid-area: welcome;
 
                         @include gridBuecher("welcomeT Bild", repeat(2, 1fr), auto, end);
                         @include box();
-                        max-height: 65vh;
+
+                        height: auto;
 
                         padding: 1rem 2rem;
+                        margin: 0 auto;
                         .welcomeText {
                             grid-area: welcomeT;
                             padding-left: 2rem;
+
+                            margin: 0;
                         }
                         img {
                             grid-area: Bild;

@@ -33,9 +33,7 @@ Horizontale Navigation basierend auf display:flex
 
      li > a {
        text-decoration: none;
-/*       color: white;
-       background-color:#3a5199;
-*/
+
        color: #f1f1f2;
        background-color:#622a0f;
 
@@ -52,4 +50,12 @@ Horizontale Navigation basierend auf display:flex
        color: black;
        background-color: #ffe9c5 ;
    }
+
+   /*Toggle*/
+   #checkboxNav {
+      display: none;
+   }
+
+
+
 } /*end media */

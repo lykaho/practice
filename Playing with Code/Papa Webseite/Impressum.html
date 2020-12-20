@@ -20,17 +20,23 @@
             <h1>Frank Littek</h1>
             <p class="vorherH6">Autor - Journalist - Schriftsteller</p>
         </header>  
-        <nav class="nav_container">
-            <ul class="site-nav-list">
-                <li class="start"><a href="index.html" class="aNav">Startseite</a></li>
-                <li class="roman"><a href="romane.html" class="aNav">Romane</a></li>
-                <li class="kinder"><a href="kinderbuecher.html" class="aNav">Kinderbücher</a></li>
-                <li class="sach"><a href="sachbuecher.html" class="aNav">Sachbücher</a></li>
-                <li class="pr"><a href="PR.html" class="aNav">Public Relations</a></li>
-                <li class="journalism"><a href="journalismus.html" class="aNav">Journalismus</a></li>
-                <li class="kontakt"><a href="kontakt.html" class="aNav">Kontakt</a></li>
-            </ul>
-        </nav>
+        <nav class="nav_container" role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" id="checkboxNav">
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul class="site-nav-list" id="menu">
+                <li class="liNav start"><a href="index.html" class="aNav">Startseite</a></li>
+                <li class="liNav roman"><a href="romane.html" class="aNav">Romane</a></li>
+                <li class="liNav kinder"><a href="kinderbuecher.html" class="aNav">Kinderbücher</a></li>
+                <li class="liNav sach"><a href="sachbuecher.html" class="aNav">Sachbücher</a></li>
+                <li class="liNav pr"><a href="PR.html" class="aNav">Public Relations</a></li>
+                <li class="liNav journalism"><a href="journalismus.html" class="aNav">Journalismus</a></li>
+                <li class="liNav kontakt"><a href="kontakt.html" class="aNav">Kontakt</a></li>
+              </ul>
+            </div>
+          </nav>
         <main class="site-content">
             <h2 class="headerImpr">Impressum</h2>
 
@@ -50,5 +56,25 @@
 
             <p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
         </main>
+        <footer class="footer">
+            <section class="kontakt">
+                <p><b>Kontakt</b></p>
+                <p>Frank Littek</p>
+                <p>Birkenfeld 25</p>
+                <p>27404 Heeslingen</p>
+            </section>
+            <section class="infos">
+                <article>
+                    <p><a href="Impressum.html">Impressum</a></p>
+                    <p><a href="datenschutz.html">Datenschutz</a></p>
+                </article>
+                <article>
+                    <p class="copyright">© Copyright 2020. Frank Littek - All rights reserved. </p>
+                </article>
+            </section>
+            <section class="nachOben">
+                <a href=#top><i class="fas fa-angle-up fa-2x"></i></a>
+            </section>
+        </footer>
     </body>
 </html>

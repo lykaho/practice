@@ -18,17 +18,23 @@
             <h1>Frank Littek</h1>
             <p class="vorherH6">Autor - Journalist - Schriftsteller</p>
         </header>
-        <nav class="nav_container">
-            <ul class="site-nav-list">
-                <li class="start"><a href="index.html" class="aNav">Startseite</a></li>
-                <li class="roman"><a href="romane.html" class="aNav">Romane</a></li>
-                <li class="u-r-here kinder"><a href="kinderbuecher.html" class="aNav">Kinderbücher</a></li>
-                <li class="sach"><a href="sachbuecher.html" class="aNav">Sachbücher</a></li>
-                <li class="pr"><a href="PR.html" class="aNav">Public Relations</a></li>
-                <li class="journalism"><a href="journalismus.html" class="aNav">Journalismus</a></li>
-                <li class="kontakt"><a href="kontakt.html" class="aNav">Kontakt</a></li>
-            </ul>
-       </nav>
+        <nav class="nav_container" role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" id="checkboxNav">
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul class="site-nav-list" id="menu">
+                <li class="liNav start"><a href="index.html" class="aNav">Startseite</a></li>
+                <li class="liNav roman"><a href="romane.html" class="aNav">Romane</a></li>
+                <li class="liNav u-r-here kinder"><a href="kinderbuecher.html" class="aNav">Kinderbücher</a></li>
+                <li class="liNav sach"><a href="sachbuecher.html" class="aNav">Sachbücher</a></li>
+                <li class="liNav pr"><a href="PR.html" class="aNav">Public Relations</a></li>
+                <li class="liNav journalism"><a href="journalismus.html" class="aNav">Journalismus</a></li>
+                <li class="liNav kontakt"><a href="kontakt.html" class="aNav">Kontakt</a></li>
+              </ul>
+            </div>
+          </nav>
        <main class="site-contentKinder">
         <header class="quoteBeginPage">
             <h2>Kinderbücher</h2>
@@ -55,7 +61,7 @@
         </section>
         
            <section class="containerBuch" data-aos="fade-left">
-                <article id="baggerAutos" class="buecher_1">
+                <article id="baggerAutos" class="buecher_2">
                     <header class="headerRoman">
                         <h2><a class="linkBuch" target="_blank" href="https://www.amazon.de/-/de/gp/product/3551084513/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i5">Bagger, Autos und Traktoren</a></h2>
                     </header>
@@ -67,7 +73,7 @@
                 </article>
            </section>
            <section class="containerBuch" data-aos="fade-right">
-                <article id="strom" class="buecher_2">
+                <article id="strom" class="buecher_1">
                     <header class="headerBuch">
                         <h2><a class="linkBuch" target="_blank" href="https://www.amazon.de/-/de/gp/product/3794191307/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i10">Woher kommt unser Strom?</a></h2>
                     </header>
@@ -79,9 +85,9 @@
                 </article>
             </section>
             <section class="containerBuch" data-aos="fade-left">
-                <article id="lesemausFlug" class="buecher_1">
+                <article id="lesemausFlug" class="buecher_2">
                     <header class="headerBuch">
-                        <h2><a class="linkBuch" target="_blank" href="https://www.amazon.de/-/de/gp/product/355108453X/ref=dbs_a_def_rwt_hsch_vapi_taft_p2_i0">LESEMAUS, Band 153: Flugzeug, Eisenbahn und Schiff</a></h2>
+                        <h2><a class="linkBuch" target="_blank" href="https://www.amazon.de/-/de/gp/product/355108453X/ref=dbs_a_def_rwt_hsch_vapi_taft_p2_i0">LESEMAUS: Flugzeug, Eisenbahn und Schiff</a></h2>
                     </header>
                     <img src="Bilder/flugzeug eisenbahn.jpg" alt="Ein Bild des Buchcovers" class="bildBuch">
                     <p class="beschreibungBuch">

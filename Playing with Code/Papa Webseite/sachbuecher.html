@@ -7,8 +7,7 @@
             <meta name="description" content="Die bisher veröffentlichten Romane von Frank Littek">
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
             <meta name="keywords" content="">
-            <link rel="stylesheet" type="text/css" href="css/style.css">
-            <link rel="stylesheet" type="text/css" href="css/indexKopie.css"><!--
+            <link rel="stylesheet" type="text/css" href="css/style.css"><!--
                 <link rel="stylesheet" type="text/css" href="aos.css">-->
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     </head>
@@ -20,17 +19,23 @@
             </header>
         </header>
         <section class="navUndHeader">
-            <nav class="nav_container">
-                <ul class="site-nav-list">
-                    <li class="start"><a href="index.html" class="aNav">Startseite</a></li>
-                    <li class="roman"><a href="romane.html" class="aNav">Romane</a></li>
-                    <li class="kinder"><a href="kinderbuecher.html" class="aNav">Kinderbücher</a></li>
-                    <li class="u-r-here sach"><a href="sachbuecher.html" class="aNav">Sachbücher</a></li>
-                    <li class="pr"><a href="PR.html" class="aNav">Public Relations</a></li>
-                    <li class="journalism"><a href="journalismus.html" class="aNav">Journalismus</a></li>
-                    <li class="kontakt"><a href="kontakt.html" class="aNav">Kontakt</a></li>
-                </ul>
-            </nav>
+            <nav class="nav_container" role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" id="checkboxNav">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul class="site-nav-list" id="menu">
+                    <li class="liNav start"><a href="index.html" class="aNav">Startseite</a></li>
+                    <li class="liNav roman"><a href="romane.html" class="aNav">Romane</a></li>
+                    <li class="liNav kinder"><a href="kinderbuecher.html" class="aNav">Kinderbücher</a></li>
+                    <li class="liNav u-r-here sach"><a href="sachbuecher.html" class="aNav">Sachbücher</a></li>
+                    <li class="liNav pr"><a href="PR.html" class="aNav">Public Relations</a></li>
+                    <li class="liNav journalism"><a href="journalismus.html" class="aNav">Journalismus</a></li>
+                    <li class="liNav kontakt"><a href="kontakt.html" class="aNav">Kontakt</a></li>
+                  </ul>
+                </div>
+              </nav>
         </section>
        <main class="site-contentRoman">
         <header class="quoteBeginPage">
@@ -44,7 +49,7 @@
                 <article id="flugangstSach" class="buecher_1">
                     <header class="headerRoman">
                         <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/Reise-Know-How-Praxis-praxisnahen-Informationen-ebook/dp/B013RJZ8SY/ref=sr_1_10?dchild=1&qid=1608066923&refinements=p_27%3AFrank+Littek&s=books&sr=1-10">
-                            Reise Know-How Praxis: Fliegen ohne Angst: Ratgeber mit vielen praxisnahen Tipps und Informationen</a></h3>
+                            Reise Know-How Praxis: Fliegen ohne Angst</a></h3>
                     </header>
                     <img src="Bilder/flugangst.jpg" alt="Ein Bild des Buchcovers" class="bildBuch">
                     <p class="beschreibungBuch">
@@ -72,24 +77,20 @@
             <section class="containerBuch" data-aos="fade-right">
                 <article id="bauFinanz" class="buecher_1">
                     <header class="headerBuch">
-                        <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/Bau-Finanzierung-leicht-gemacht-Ratgeber-Albtraum-ebook/dp/B007C77SM2/ref=sr_1_13?dchild=1&qid=1608066923&refinements=p_27%3AFrank+Littek&s=books&sr=1-13">Bau-Finanzierung leicht gemacht: Der clevere Ratgeber, damit der Traum vom eigenen Heim nicht zum Albtraum wird (Bau-Rat)</a></h3>
+                        <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/Bau-Finanzierung-leicht-gemacht-Ratgeber-Albtraum-ebook/dp/B007C77SM2/ref=sr_1_13?dchild=1&qid=1608066923&refinements=p_27%3AFrank+Littek&s=books&sr=1-13">Bau-Finanzierung leicht gemacht</a></h3>
                     </header>
                     <img src="Bilder/bauFinanz.jpg" alt="Ein Bild des Buchcovers" class="bildBuch">
                     <p class="beschreibungBuch">
-                        Ein glaubwürdiger, anwendungsbezogener Geld-Ratgeber für den Erwerb bzw. Bau von Immobilien, den man gut verstehen 
-                        und damit auch vorteilhaft nutzen kann. <br>Im vorliegenden Buch konzentriert sich Frank Littek auf die Darstellung 
+                        Im vorliegenden Buch konzentriert sich Frank Littek auf die Darstellung 
                         der jeweils günstigsten Gestaltung der Bau-Finanzierung als wichtigste Voraussetzung für eine optimale Bauplanung 
-                        und Bauausführung. <br>Der Autor spricht den ratsuchenden Bauherren bzw. Immobilienkäufer direkt an, vermeidet das 
-                        für Laien oft un- oder missverständliche "Finanz-Chinesisch", macht Vorgänge besser verständlich, verweist auf 
-                        bedenkenswerte Probleme bzw. auf die im speziellen Fall bessere Lösung. Wie ein roter Faden ziehen sich durch das 
-                        Buch einfach zu durchschauende Beispiele für positive und negative Auswirkungen bei bestimmten Finanzierungswegen.
+                        und Bauausführung.
                     </p>
                 </article>
             </section>
             <section class="containerBuch" data-aos="fade-left">
                 <article id="hausSicherheit" class="buecher_2">
                     <header class="headerBuch">
-                        <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/Sicherheit-rund-ums-Haus-Einbruchsschutz-ebook/dp/B007C77RXC/ref=sr_1_14?dchild=1&qid=1608066923&refinements=p_27%3AFrank+Littek&s=books&sr=1-14">Sicherheit rund ums Haus: Vom optimalen Einbruchsschutz bis zur richtigen Versicherung für Ihr Haus (Bau-Rat) </a></h3>
+                        <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/Sicherheit-rund-ums-Haus-Einbruchsschutz-ebook/dp/B007C77RXC/ref=sr_1_14?dchild=1&qid=1608066923&refinements=p_27%3AFrank+Littek&s=books&sr=1-14">Sicherheit rund ums Haus</a></h3>
                     </header>
                     <img src="Bilder/hausSicherheit.jpg" alt="Ein Bild des Buchcovers" class="bildBuch">
                     <p class="beschreibungBuch">
@@ -98,29 +99,20 @@
                         selben Verlag erschienenen Ratgeber zur Bau-Finanzierung und für das Sparen beim Bauen, zeigt in diesem Buch die 
                         vielen im und am Haus bestehenden, meist noch gar nicht wahrgenommenen Schwachpunkte auf. Vor allem beschreibt er 
                         die Vielzahl von Möglichkeiten, die zu sehr viel mehr Sicherheit sowohl im geplanten als auch im bereits 
-                        bestehenden Haus bzw. rund ums Haus führen werden.<br>Es geht dabei um Baumaßnahmen, um Sicherungen (vom 
-                        Außengelände bis zu den Einstiegsmöglichkeiten, von den Schließsystemen bis zur Alarmanlage), um das richtige 
-                        Verhalten nach einem Einbruch, um geeignete und auch um unnötige Versicherungen, um Verlustnachweise usw. - also 
-                        um Rat und Information, wenn man vorsorglich oder spätestens nach einem Schaden auf "Nummer Sicher" gehen will!
+                        bestehenden Haus bzw. rund ums Haus führen werden.
                     </p>
                 </article>
             </section>
             <section class="containerBuch" data-aos="fade-right">
                 <article id="bauSpar" class="buecher_1">
                     <header class="headerBuch">
-                        <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/Richtig-sparen-beim-Bauen-preisg%C3%BCnstigen-ebook/dp/B007C77RMI/ref=sr_1_15?dchild=1&qid=1608066923&refinements=p_27%3AFrank+Littek&s=books&sr=1-15">Richtig sparen beim Bauen: Der clevere Ratgeber für den preisgünstigen Hausbau (Bau-Rat) </a></h3>
+                        <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/Richtig-sparen-beim-Bauen-preisg%C3%BCnstigen-ebook/dp/B007C77RMI/ref=sr_1_15?dchild=1&qid=1608066923&refinements=p_27%3AFrank+Littek&s=books&sr=1-15">Richtig sparen beim Bauen</a></h3>
                     </header>
                     <img class="bildBuch" src="Bilder/bauSpar.jpg" alt="Ein Bild des Buchcovers">
                     <p class="beschreibungBuch">
                         Entsprechend der eingebrachten Arbeitsleistung fällt auch die erzielte Ersparnis aus. Sie reicht von ¬ 7.000,-, 
                         die eigentlich jeder Bauherr durch die Übernahme leichter Arbeiten erzielen kann. Bis über ¬ 50.000,-, die sich 
-                        durch den weitgehenden Selbstbau des Hauses realisieren lassen.<br>Fünfstellige Beträge können aber auch in einem 
-                        Bereich erzielt werden, der meist vernachlässigt wird: der Finanzierung des Hauses. Durch eine ungünstige Vor- oder 
-                        Zwischenfinanzierung, eine schlechte Kombination der Finanzierungsinstrumente oder schlicht ungünstige 
-                        Zinskonditionen kommen schnell ¬ 10.000,- und mehr zusammen, die der Bauherr hätte sparen können. Schuld daran ist 
-                        nicht zuletzt auch die Finanzierungsmaterie selbst. In ihrer Unübersichtlichkeit, scheinbaren Kompliziertheit und 
-                        der Überfrachtung mit Fachbegriffen trägt sie ganz wesentlich dazu bei, den Bau eines Eigenheimes zu einem 
-                        Abenteuer werden zu lassen.<br>Dieses Buch beschreibt die Sachverhalte verständlich. Bei genauer Beschäftigung mit 
+                        durch den weitgehenden Selbstbau des Hauses realisieren lassen.<br>Dieses Buch beschreibt die Sachverhalte verständlich. Bei genauer Beschäftigung mit 
                         den einzelnen Finanzierungsinstrumenten zeigt sich schnell, wie einfach und logisch sie im Grunde funktionieren. 
                         Beide Möglichkeiten, Eigenleistung und Finanzierung, zusammen - und noch einige zusätzliche Tricks und Kniffe - 
                         machen letztlich die Kunst des Sparens beim Bauen aus. Und die zu beherrschen, ist für jeden Bauherrn wichtig.
@@ -153,8 +145,7 @@
                         und Produkten aller Art innerhalb kürzester Zeit wäre ohne die Luftfracht überhaupt nicht mehr vorstellbar. Die 
                         Branche boomt mit zweistelligen Wachstumsraten. Doch nicht nur alltägliche Konsumgüter, auch Autos oder ganze 
                         Flugzeugteile werden auf dem Luftweg von A nach B transportiert. Kein Transportmittel ist schneller, zuverlässiger 
-                        und präziser als die Luftfracht, die mittlerweile den ganzen Globus umspannt. Aber auch unter technischen Aspekten 
-                        ist das Thema faszinierend. Dieses Buch befasst sich mit der Geschichte, der Organisation, der Technik und den 
+                        und präziser als die Luftfracht. Dieses Buch befasst sich mit der Geschichte, der Organisation, der Technik und den 
                         Flugzeugen dieses interessanten Luftfahrtbereichs.
                     </p>
                 </article>
@@ -171,19 +162,13 @@
                         heute mehr als deutlich, welchen Vertrauensverlust der Luftverkehr hinnehmen musste. Wie sicher aber ist der 
                         Luftverkehr wirklich? Wie sicher sind die gängigsten Flugzeugtypen? Gibt es Schwachstellen im Luftverkehr; Risiken, 
                         denen sich der Fluggast besser nicht aussetzen sollte? Fragen, auf die dieses Buch konkrete Antworten gibt. 
-                        Erstmals erhält der Leser einen umfassenden Überblick über den Stand der Sicherheit im zivilen Flugverkehr: Jedes 
-                        der gängigen Verkehrsflugzeuge - von der Boeing 737 über den Airbus A300 bis hin zur Concorde und der mächtigen 
-                        Boeing 747 wird kenntnis- und faktenreich hinsichtlich seiner Sicherheit beschrieben. Darüber hinaus zeigt das 
-                        Buch die aktuell besonders bedeutsamen Risikoquellen für die Luftfahrt auf. Ein Ausblick auf die Zukunft, die 
-                        Erklärung von besonderen Sicherheitssystemen wie TCAS, Einblicke in die Arbeit der Flugunfalluntersucher und die 
-                        Bemühungen der Fluggesellschaften im täglichen Kampf um mehr Sicherheit runden das Werk ab.
                     </p>
                 </article>
             </section>
             <section class="containerBuch" data-aos="fade-right">
                 <article id="cockpit" class="buecher_1">
                     <header class="headerBuch">
-                        <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/Airliner-Cockpits-Piloten-Arbeitspl%C3%A4tze-Jahrzehnten/dp/3765472360/ref=sr_1_19?dchild=1&qid=1608066933&refinements=p_27%3AFrank+Littek&s=books&sr=1-19">Airliner- Cockpits. Piloten- Arbeitsplätze aus acht Jahrzehnten</a></h3>
+                        <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/Airliner-Cockpits-Piloten-Arbeitspl%C3%A4tze-Jahrzehnten/dp/3765472360/ref=sr_1_19?dchild=1&qid=1608066933&refinements=p_27%3AFrank+Littek&s=books&sr=1-19">Airliner- Cockpits</a></h3>
                     </header>
                     <img class="bildBuch" src="Bilder/cockpit.jpg" alt="Ein Bild des Buchcovers">
                     <p class="beschreibungBuch">
@@ -201,26 +186,21 @@
                     </header>
                     <img class="bildBuch" src="Bilder/fgs.jpg" alt="Ein Bild des Buchcovers">
                     <p class="beschreibungBuch">
-                        Reisen mit modernen Verkehrsflugzeugen gehören heute längst zum Alltag der Menschen. Kaum jemand, der nicht mit 
-                        diesem Thema zumindest gelegentlich in Berührung kommt - und sei es auch nur im Urlaub oder durch die 
-                        Berichterstattung in den Medien. Trotz der Selbstverständlichkeit, mit der Fluggäste heutzutage im Luftverkehr 
-                        reisen, fasziniert die Luftfahrt eine stetig wachsende Zahl von Menschen. Der alte Traum vom Fliegen wird immer 
+                        Der alte Traum vom Fliegen wird immer 
                         noch geträumt - auch wenn er längst Realität geworden ist. Im ersten Teil dieses Bandes werden die wichtigsten 
                         Flugzeugtypen ausführlich erklärt - von ihrer Entwicklungsgeschichte über Konstruktionsdetails bis hin zu den 
                         geplanten und produzierten Varianten. Hochwertige Fotos und Zeichnungen von Maschinen und ihren technischen Details 
                         illustrieren den Text und erlauben einen Blick hinter die sonst verschlossene Tür des Cockpits. Der zweite Teil 
                         gibt die Geschichte und Gegenwart der wichtigsten internationalen Airlines sowie bekannter Ferienfluggesellschaften 
                         wieder. Neben der wirtschaftlichen Entwicklung und der Geschichte werden das Streckennetz und die Flotte der 
-                        jeweiligen Fluggesellschaft vorgestellt. Eine Einführung in die Entwicklung des Luftverkehrs und ein abschließendes 
-                        Kapitel, in dem Stichworte und Begriffe aus der Welt der Luftfahrt kurz und prägnant erklärt werden, ergänzen den 
-                        Inhalt dieses Buches.
+                        jeweiligen Fluggesellschaft vorgestellt. 
                     </p>
                 </article>
             </section>
             <section class="containerBuch" data-aos="fade-right">
                 <article id="dMark" class="buecher_1">
                     <header class="headerBuch">
-                        <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/1948-2001-D-Mark-Gedenkbuch-Frank-Littek/dp/3806876762/ref=sr_1_22?dchild=1&qid=1608066933&refinements=p_27%3AFrank+Littek&s=books&sr=1-22">1948-2001. Das D-Mark Gedenkbuch</a></h3>
+                        <h3><a class="linkBuch" target="_blank" href="https://www.amazon.de/1948-2001-D-Mark-Gedenkbuch-Frank-Littek/dp/3806876762/ref=sr_1_22?dchild=1&qid=1608066933&refinements=p_27%3AFrank+Littek&s=books&sr=1-22">Das D-Mark Gedenkbuch</a></h3>
                     </header>
                     <img class="bildBuch" src="Bilder/dMark.jpg" alt="Ein Bild des Buchcovers">
                     <p class="beschreibungBuch">
