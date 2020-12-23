@@ -502,6 +502,21 @@
         .picMobile {
             display: none;
         }
+        html body .footer {
+            display: block;
+        }
+        html body .footer .nachOben {
+            display: none;
+        }
+        html body .footer .kontakt {
+            padding: 1rem 2rem 0.5rem;
+        }
+        html body .footer .infos {
+            padding: 0.5rem 2rem;
+        }
+        html body .footer section article {
+            padding: 0.5rem 0;
+        }
     }
 
     @media screen and (max-height: 450px) {

@@ -88,7 +88,7 @@ Stylesheet für Formulare und ihre Elemente
     /*button*/
     #button {
         border: none;
-        border-radius: 1%;
+        border-radius: 4px;
 
         background-color: #ffe9c5;
 
