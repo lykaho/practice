@@ -1,0 +1,96 @@
+@media screen {
+
+/*******************
+    Hero Header 
+*******************/
+    .heroHeader {
+        background-image: url(Bild1.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+
+        height: 100vh;
+
+        .headerSection {
+            padding: 45vh 10rem;
+
+            .titleHero {
+                color: #FB4F93;
+                background-color: white;
+                line-height: 1.5;
+                max-width: 20rem;
+                text-align: center;
+            }
+            .descriptionTitle {
+                color: black;
+                background-color: white;
+                line-height: 2;
+                max-width: 25rem;
+                text-align: center;
+            }
+        }
+
+    }
+
+/*******************
+    Main
+*******************/
+    .mainArea {
+        display: grid;
+        grid-template-columns: 10vw 1fr 10vw;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: ". leftImg ."". rightImg ."". leftImg2 ."". rightImg2 .";
+        .leftImg, .rightImg, .leftImg2, .rightImg2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-items: center;
+
+            padding: 2rem 0;
+            .imgSection {
+                max-width: 97%;
+                max-height: 97%;                
+            }
+            .articleSection {
+                .headerSection {
+                    text-align: center;
+                }
+                .textSection {
+                    padding: 1rem;
+                }
+            }
+        }
+        .leftImg {
+            grid-area: leftImg;
+        }
+        .rightImg {
+            grid-area: rightImg;
+        }
+        .leftImg2 {
+            grid-area: leftImg2;
+        }
+        .rightImg2 {
+            grid-area: rightImg2;
+        }
+    }
+
+/*******************
+    Footer
+*******************/
+    .siteFooter {
+        background-color: rgba(0, 0, 0, 0.87);
+        color: white;
+        margin: 0;
+        p {
+            margin: 0;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }    
+
+
+
+} /*end media */

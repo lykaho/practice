@@ -1,0 +1,32 @@
+@media screen {
+
+    .siteNav {
+                background-color: white;
+                position: sticky;
+                top: 0;
+                width: 100%;
+                .ulNav {
+                    display: flex;
+                    justify-content: space-between;
+                    
+
+                    max-width: 80vw;
+                    padding: 1rem;
+                    margin: 0 auto;
+                    .liNav {
+                        list-style-type: none;
+
+                        .siteNavLink {
+                            text-decoration: none;
+                            color: black;
+                            &:hover {
+                                color: #FB4F93;
+                            }
+                        }
+                    }
+                    #urhere {
+                        color: #FB4F93;
+                        text-decoration: none;
+                    }
+                }
+} /*end screen*/

@@ -1,0 +1,36 @@
+@media screen { 
+
+    /**
+      * Kopfbereich   
+      */ 
+  
+    /* Abstände Logo und Slogan anpassen */ 
+    .site-logo {
+      margin-bottom: 0; 
+    }
+    .site-slogan {
+      margin: 0; 
+    }
+  
+  
+    /**
+      * Inhaltsbereich   
+      */ 
+  
+    /* Zeilenabstand auf das anderthalbfache der Schriftgröße */
+    .site-content {
+        line-height: 1.5;
+    }
+  
+  
+    /**
+      * Fußbereich   
+      */ 
+  
+    /* Grundlegende Gestaltung der Fußzeile aus Teil 1 (plus font-size kleiner) */
+    .site-footer {
+        font-size: smaller;
+        padding: 0.5em; 
+    }
+  
+  } /* Ende @media */ 

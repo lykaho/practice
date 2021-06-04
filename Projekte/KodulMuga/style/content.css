@@ -1,0 +1,101 @@
+@media screen {
+  /*******************
+    Hero Header 
+*******************/
+  .heroHeader {
+    background-image: url(Bild1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+  .heroHeader .headerSection {
+    padding: 45vh 10rem;
+  }
+  .heroHeader .headerSection .titleHero {
+    color: #FB4F93;
+    background-color: white;
+    line-height: 1.5;
+    max-width: 20rem;
+    text-align: center;
+  }
+  .heroHeader .headerSection .descriptionTitle {
+    color: black;
+    background-color: white;
+    line-height: 2;
+    max-width: 25rem;
+    text-align: center;
+  }
+  /*******************
+    Main
+*******************/
+  .mainArea {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10vw 1fr 10vw;
+        grid-template-columns: 10vw 1fr 10vw;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: ". leftImg ." ". rightImg ." ". leftImg2 ." ". rightImg2 .";
+  }
+  .mainArea .leftImg, .mainArea .rightImg, .mainArea .leftImg2, .mainArea .rightImg2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    padding: 2rem 0;
+  }
+  .mainArea .leftImg .imgSection, .mainArea .rightImg .imgSection, .mainArea .leftImg2 .imgSection, .mainArea .rightImg2 .imgSection {
+    max-width: 97%;
+    max-height: 97%;
+  }
+  .mainArea .leftImg .articleSection .headerSection, .mainArea .rightImg .articleSection .headerSection, .mainArea .leftImg2 .articleSection .headerSection, .mainArea .rightImg2 .articleSection .headerSection {
+    text-align: center;
+  }
+  .mainArea .leftImg .articleSection .textSection, .mainArea .rightImg .articleSection .textSection, .mainArea .leftImg2 .articleSection .textSection, .mainArea .rightImg2 .articleSection .textSection {
+    padding: 1rem;
+  }
+  .mainArea .leftImg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: leftImg;
+  }
+  .mainArea .rightImg {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: rightImg;
+  }
+  .mainArea .leftImg2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: leftImg2;
+  }
+  .mainArea .rightImg2 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: rightImg2;
+  }
+  /*******************
+    Footer
+*******************/
+  .siteFooter {
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    margin: 0;
+  }
+  .siteFooter p {
+    margin: 0;
+  }
+  .siteFooter p a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/*end media */
+/*# sourceMappingURL=content.css.map */

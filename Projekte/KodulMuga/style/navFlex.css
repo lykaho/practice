@@ -1,0 +1,47 @@
+@media screen {
+  .siteNav {
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  .siteNav .ulNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 80vw;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .siteNav .ulNav .liNav {
+    list-style-type: none;
+  }
+  .siteNav .ulNav .liNav .siteNavLink {
+    text-decoration: none;
+    color: black;
+  }
+  .siteNav .ulNav .liNav .siteNavLink:hover {
+    color: #FB4F93;
+  }
+  .siteNav .ulNav #urhere {
+    color: #FB4F93;
+    text-decoration: none;
+  }
+  .siteNav .titleHero {
+    color: #FB4F93;
+    background-color: white;
+    line-height: 1.5;
+  }
+  .siteNav .descriptionTitle {
+    color: white;
+    background-color: black;
+    line-height: 1.5;
+  }
+}
+
+/*end screen*/
+/*# sourceMappingURL=navFlex.css.map */
