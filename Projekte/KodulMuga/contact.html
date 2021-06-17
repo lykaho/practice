@@ -33,7 +33,7 @@
                 <li class="liNav"><a class="siteNavLink" href="donate.html">Donate</a></li>
                 <li class="liNav"><a class="siteNavLink" id="urhere" href="contact.html">Contact us</a></li>
             </ul>
-        </nav><!--
+        </nav><!-- 
             <header class="heroHeader">
                 <section class="headerSection">
                     <h1 class="titleHero">Kodul Muga</h1>
@@ -41,6 +41,38 @@
                 </section>
             </header>-->
         <main class="mainArea">
+            <form class="containerForm" data-netlify="true" name="contact">
+                <header id="titleForm">
+                    <h1>Contact us</h1>                    
+                </header>
+                <div class="formSection">
+                    <label id="labelName" for="name">Name</label>
+                    <input id="inputName" type="text" name="name" required placeholder="Your Name">
+                </div>
+                <div class="formSection">
+                    <label id="labelEmail" for="email">E-Mail</label>
+                    <input id="inputEmail" type="text" name="email" required placeholder="Your email address">
+                </div>
+                <div class="formSection">
+                    <label id="labelTopic" for="topic">Topic</label>
+                    <input id="inputTopic" type="text" name="topic" required placeholder="Topic">
+                </div>
+                <div class="formSection">
+                    <label id="labelMsg" for="msg">Message</label>
+                    <textarea id="textareaMsg" name="msg" placeholder="Leave Your Message" required></textarea>
+                </div>
+                <div class="formSection">
+                    <input id="privacyPol" class="checkbox" type="checkbox" required name="privacyPol" value="privacyPolAccept">
+                    <label id="labelPrivacy" for="privacyPol">Accept Privacy Policy</label>
+                </div>
+                <div class="formSection">
+                    <button id="button">Send</button>
+                </div>
+
+            </form>
+
+
+
             <p><a href="info@kodulmugafoundation.com">E-Mail</a></p>
             <p><a href="https://instagram.com/foreningenkodulmuga?igshid=21k0ml3lku23">Instagram</a></p>
             <p><a href="https://www.facebook.com/foreningenkodulmuga/">Facebook</a></p>
